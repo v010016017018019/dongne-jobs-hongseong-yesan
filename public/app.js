@@ -1,8 +1,11 @@
+import {inject} from '/vendor/analytics.mjs';
 import {naverLink} from './links.js';
 import {webApi} from './browser-store.js';
 import {filterJobs,groupJobs,favoriteKey,exactAddressKey,distanceFrom,civilDaysUntil,jobsCsv} from './model.js';
 import {stages,locationLabels,payInfo,employmentText,jobConditions,locationReason,sanitizeSearch} from './features.js';
 import {educationLabels,highSchoolEducation,educationInfo,educationAssessment} from './education.js';
+// Initialize Vercel Web Analytics
+inject();
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const names={saramin:'사람인',jobkorea:'잡코리아',work24:'고용24'};
