@@ -29281,8 +29281,9 @@
     "factsVersion": 5,
     "salary": "연봉 2,400만원 이상 (면접 후 협의)",
     "employment": "프리랜서",
+    "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-20T13:05:30.814Z"
+    "checkedAt": "2026-10-22T17:21:47.222Z"
   },
   "saramin:55293139": {
     "sites": [],
@@ -31186,8 +31187,9 @@
     "factsVersion": 5,
     "salary": "연봉 4,000 만원",
     "employment": "정규직",
+    "education": "고졸 이상",
     "conditions": [],
-    "checkedAt": "2026-10-20T13:05:33.259Z"
+    "checkedAt": "2026-10-22T17:21:46.062Z"
   },
   "saramin:55304904": {
     "sites": [],
@@ -37928,7 +37930,7 @@
     "employment": "정규직(수습기간)2개월",
     "education": "대졸(2,3년)이상(예정자가능)",
     "conditions": [],
-    "checkedAt": "2026-10-21T07:23:11.017Z"
+    "checkedAt": "2026-10-22T17:21:34.656Z"
   },
   "saramin:55266296": {
     "sites": [
@@ -37937,7 +37939,7 @@
         "lat": 36.599935043993,
         "lng": 126.666620371481,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-21T07:23:12.194Z"
+        "confirmedAt": "2026-10-22T17:21:36.144Z"
       }
     ],
     "address": "(32231) 충남 홍성군 홍성읍 홍성천길 188",
@@ -37948,7 +37950,7 @@
     "employment": "정규직(수습기간)-3개월프리랜서",
     "education": "대졸(2,3년)이상(예정자가능)",
     "conditions": [],
-    "checkedAt": "2026-10-21T07:23:12.207Z"
+    "checkedAt": "2026-10-22T17:21:36.159Z"
   },
   "saramin:55355505": {
     "sites": [
@@ -37957,7 +37959,7 @@
         "lat": 36.7292678311214,
         "lng": 126.777321630416,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-21T07:23:13.526Z"
+        "confirmedAt": "2026-10-22T17:21:53.473Z"
       }
     ],
     "address": "(32420) 충남 예산군 황금뜰로 937-24",
@@ -37968,7 +37970,7 @@
     "employment": "정규직(수습기간)-3개월계약직(정규직 전환가능)-3개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-21T07:23:13.543Z"
+    "checkedAt": "2026-10-22T17:21:53.488Z"
   },
   "saramin:55355372": {
     "sites": [
@@ -37977,7 +37979,7 @@
         "lat": 36.658953725623,
         "lng": 126.778248070936,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-21T07:23:14.669Z"
+        "confirmedAt": "2026-10-22T17:21:54.313Z"
       }
     ],
     "address": "(32447) 충남 예산군 응봉면 증곡길 95 증곡리마을회관",
@@ -37988,7 +37990,7 @@
     "employment": "계약직(정규직전환가능)8개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-21T07:23:14.683Z"
+    "checkedAt": "2026-10-22T17:21:54.329Z"
   },
   "jobkorea:50215032": {
     "sites": [],
@@ -39664,5 +39666,260 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-10-22T12:07:17.927Z"
+  },
+  "work24:VALIDATION:K172222610220025": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 은하면 은하로184번길 111-11",
+        "lat": 36.5169932910855,
+        "lng": 126.58953518446698,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-22T17:21:22.984Z"
+      }
+    ],
+    "address": "충청남도 홍성군 은하면 은하로184번길 111-11",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 280만원 ~ 300만원 이하 (기본급 기준 상여금 별도 : 200%) 협의가능",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:23.047Z"
+  },
+  "work24:CIN:2610220003607": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "-",
+    "employment": "계약직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:24.078Z"
+  },
+  "work24:CSI:55369027": {
+    "sites": [
+      {
+        "address": "(32416) 충남 예산군 삽교읍 예학로 10-22",
+        "lat": 36.661405410833,
+        "lng": 126.671763782693,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-22T17:21:27.532Z"
+      }
+    ],
+    "address": "(32416) 충남 예산군 삽교읍 예학로 10-22",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 324 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 2,156,880원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "계약직(기간제)2개월",
+    "education": "학력무관",
+    "conditions": [],
+    "originId": "saramin:55369027",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55369027",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-10-22T17:21:25.400Z",
+    "checkedAt": "2026-10-22T17:21:27.541Z"
+  },
+  "saramin:55370519": {
+    "sites": [],
+    "address": "충청남도 홍성군 구항면 구성북로 295-34 구성북로 295-34 아이에스테크",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 2,588만원 (면접 후 협의)",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:37.575Z"
+  },
+  "saramin:55370523": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍북읍 충남대로 45 5층 부속실",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "일급 90,830 원",
+    "employment": "계약직11개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:38.628Z"
+  },
+  "saramin:55370528": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍북로 55-70 (주)제이앤케이건설(야적장)",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000 만원",
+    "employment": "정규직",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:39.940Z"
+  },
+  "saramin:55370512": {
+    "sites": [],
+    "address": "충청남도 홍성군 구항면 구성북로 295-34",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "일급 100,000 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:40.813Z"
+  },
+  "saramin:55370529": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍북로 55-70 (주)제이앤케이건설(야적장)",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "일급 170,000 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:41.912Z"
+  },
+  "saramin:55370526": {
+    "sites": [],
+    "address": "충청남도 홍성군 구항면 충서로966번길 48",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,840 만원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:43.249Z"
+  },
+  "saramin:55370506": {
+    "sites": [],
+    "address": "충청남도 홍성군 광천읍 오서길 209-146 한흥농장",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "정규직",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:44.424Z"
+  },
+  "saramin:55369027": {
+    "sites": [
+      {
+        "address": "(32416) 충남 예산군 삽교읍 예학로 10-22",
+        "lat": 36.661405410833,
+        "lng": 126.671763782693,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-22T17:21:48.077Z"
+      }
+    ],
+    "address": "(32416) 충남 예산군 삽교읍 예학로 10-22",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 324 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 2,156,880원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "계약직(기간제)2개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:48.093Z"
+  },
+  "saramin:55368685": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,400 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 25,882,560원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "계약직파견직-1년",
+    "education": "고졸 이상",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "셔틀버스",
+        "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55368685"
+      }
+    ],
+    "checkedAt": "2026-10-22T17:21:49.218Z"
+  },
+  "saramin:55366861": {
+    "sites": [
+      {
+        "address": "(32435) 충남 예산군 예산읍 예산로 201 국민은행 예산지점 2층",
+        "lat": 36.6800270003634,
+        "lng": 126.846944996567,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-22T17:21:50.459Z"
+      }
+    ],
+    "address": "(32435) 충남 예산군 예산읍 예산로 201 국민은행 예산지점 2층",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 250 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 2,156,880원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "정규직",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:50.468Z"
+  },
+  "saramin:55366798": {
+    "sites": [
+      {
+        "address": "(32415) 충남 예산군 삽교읍 산단3길 69, 2층",
+        "lat": 36.6766025644388,
+        "lng": 126.751550286219,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-22T17:21:52.218Z"
+      }
+    ],
+    "address": "(32415) 충남 예산군 삽교읍 산단3길 69, 2층",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "계약직(정규직전환가능)3개월",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:52.232Z"
+  },
+  "saramin:55370442": {
+    "sites": [],
+    "address": "충청남도 예산군 신암면 추사고택로 496",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 2,738 만원",
+    "employment": "정규직",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:55.573Z"
+  },
+  "saramin:55370447": {
+    "sites": [],
+    "address": "충청남도 예산군 고덕면 예당산단2길 14-16",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 11,000 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:56.722Z"
+  },
+  "saramin:55370530": {
+    "sites": [],
+    "address": "충청남도 예산군 예목로 154 403호",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 4,000 만원",
+    "employment": "계약직6개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-22T17:21:58.387Z"
   }
 }
