@@ -1,0 +1,43 @@
+name: Refresh public job listings
+on:
+  schedule:
+    - cron: '23 0,6,12,18 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-job-list-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - name: Collect public listings; keep previous data on source errors
+        id: refresh
+        continue-on-error: true
+        run: npm run collect
+      - name: Validate publishable snapshot
+        run: npm run build
+      - name: Save public data for Vercel Git deployments
+        run: |
+          git add -- data/jobs-v7.json data/details-v7.json data/discovery-v7.json data/history-v7.json data/origins-v7.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh public recruitment listings'
+          git push
+      - name: Report incomplete source checks
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo 'One or more source checks failed. Confirmed updates and the last usable listings were preserved; see the site verification panel.'
+          exit 1

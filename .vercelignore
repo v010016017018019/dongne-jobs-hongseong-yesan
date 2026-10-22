@@ -1,0 +1,12 @@
+.git/
+.vercel/
+node_modules/
+dist/
+test/
+.env
+.env.*
+*.log
+*.tmp
+data/personal*
+data/manual*
+data/locations*

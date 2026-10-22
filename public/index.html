@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>홍성·예산 채용지도 V7 — 더 가까운 일자리</title>
+  <meta name="description" content="홍성군과 예산군 사람인·잡코리아·고용24 채용공고를 지도에서 확인하고 원문과 네이버 지도로 연결합니다.">
+  <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/vendor/leaflet.css"><link rel="stylesheet" href="/vendor/MarkerCluster.css"><link rel="stylesheet" href="/styles.css">
+  <script src="/vendor/leaflet.js" defer></script><script src="/vendor/markercluster.js" defer></script><script src="/app.js" type="module"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="/" aria-label="채용지도 홈"><span class="brand-icon">⌖</span><span>동네채용<span class="brand-sub">홍성 · 예산 <b class="plus-label">V7</b></span></span></a>
+    <div class="header-note"><span class="status-dot"></span> 어디서든 찾는 홍성·예산 일자리</div>
+    <div class="header-actions"><button class="button quiet" id="help-button">이용 안내</button><button class="button" id="quality-button">검증 기록</button><button class="button primary" id="refresh-button">↻ 최신 목록 확인</button></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">일자리와 나 사이, 가까워지는 거리</p><h1>내 일자리, <span>지도에서 찾기.</span></h1><p class="intro-copy">홍성·예산의 채용공고를 한눈에. 근무지를 먼저 확인하고 지원하세요.</p></div>
+      <div class="intro-stats"><div><strong id="total-stat">0</strong><span>같은 원문을 묶은 공고</span></div><div><strong id="located-stat">0</strong><span>지도에서 확인</span></div><div><strong id="raw-total-stat">0</strong><span>모은 원문</span></div></div>
+    </section>
+    <section class="personal-toolbar" aria-label="내 검색과 확인 상태">
+      <div class="personal-view"><label class="check-label"><input id="since-visit" type="checkbox">지난 방문 이후 <span id="since-count">0</span></label><label class="check-label"><input id="unread-only" type="checkbox">읽지 않은 공고만</label><small id="visit-label">방문 기록 확인 중</small></div>
+      <div class="saved-searches"><select id="saved-search" aria-label="저장한 검색 조건"><option value="">저장한 검색 조건</option></select><input id="search-name" maxlength="40" aria-label="검색 조건 이름" placeholder="검색 이름 예: 홍성 생산직"><button class="button" id="save-search">현재 조건 저장</button><button class="text-button" id="delete-search">선택 조건 삭제</button></div>
+    </section>
+    <section class="advanced-toolbar" aria-label="지도와 공고 보기 설정">
+      <div class="view-options"><label class="check-label"><input id="group-duplicates" type="checkbox" checked>같은 원문 묶기</label><label class="check-label"><input id="visible-only" type="checkbox">현재 지도 안에서</label><label class="check-label"><input id="soon-only" type="checkbox">7일 안에 마감</label><label class="check-label new-filter"><input id="new-only" type="checkbox">새 공고만 <span id="new-count">0</span></label><select id="location-scope" aria-label="근무지 범위"><option value="all">모든 검색 결과</option><option value="local">지역 밖 근무지 제외</option></select></div>
+      <div class="distance-controls"><button class="button" id="reference-button">⌖ 기준점 지정</button><select id="radius" aria-label="기준점 반경" disabled><option value="5">직선 5km 안</option><option value="10" selected>직선 10km 안</option><option value="20">직선 20km 안</option><option value="all">거리 제한 없음</option></select><button class="text-button" id="reference-clear" hidden>기준점 지우기</button><button class="text-button" id="reset-filters">필터 초기화</button></div>
+    </section>
+    <section class="toolbar" aria-label="채용공고 검색과 필터">
+      <div class="region-tabs" role="group" aria-label="지역"><button class="active" data-region="all" aria-pressed="true">전체 지역</button><button data-region="홍성군" aria-pressed="false">홍성군</button><button data-region="예산군" aria-pressed="false">예산군</button></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="회사명, 직무, 주소 검색" aria-label="회사명 직무 주소 검색"></label>
+      <select id="experience" aria-label="경력 조건"><option value="all">경력 전체</option><option value="신입">신입</option><option value="경력">경력</option><option value="경력무관">경력무관</option></select>
+      <label class="check-label"><input id="located-only" type="checkbox">위치 확인 공고만</label>
+    </section>
+    <section class="education-panel" aria-labelledby="education-title">
+      <div class="education-heading"><div><h2 id="education-title">학력 조건 <span>복수 선택</span></h2><p>원문의 최소 요구 학력으로 찾습니다.</p></div><div class="education-shortcuts"><button class="button" id="education-high-school" aria-pressed="false">고졸 기준 선택</button><button class="text-button" id="education-all" aria-pressed="true">전체 학력</button></div></div>
+      <fieldset class="education-options" id="education-options" aria-describedby="education-help"><legend class="sr-only">찾을 학력 조건을 여러 개 선택하세요</legend></fieldset>
+      <div class="education-foot"><span id="education-selection" role="status">전체 학력 표시 중</span><p id="education-help">여러 개를 고르면 하나라도 맞는 공고를 표시합니다. ‘고졸 기준’은 학력무관·중졸 이하·고졸을 함께 선택합니다. ‘고졸 이상’·‘고졸~대졸’도 포함합니다. 선택이 없으면 전체를 표시합니다.</p></div>
+    </section>
+    <details class="extra-filters" id="extra-filters"><summary>급여 · 고용형태 · 근무조건 · 위치 확인 필터</summary><div class="extra-filter-grid">
+      <label>급여 단위<select id="pay-period"><option value="all">급여 전체</option><option value="month">월급</option><option value="year">연봉</option><option value="hour">시급</option><option value="day">일급</option><option value="negotiable">협의·내규</option><option value="missing">급여 미기재</option></select></label>
+      <label>급여 하한액 이상 <span id="pay-unit">단위 선택</span><input id="pay-min" type="number" min="0" step="any" placeholder="최소 금액" disabled></label>
+      <label>고용형태<select id="employment"><option value="all">고용형태 전체</option><option value="regular">정규직·기간 제한 없음</option><option value="contract">계약직·기간제</option><option value="part">시간제·아르바이트</option><option value="intern">인턴</option><option value="dispatch">파견</option><option value="freelance">프리랜서</option><option value="missing">고용형태 미기재</option></select></label>
+      <label>원문에 안내된 근무조건<select id="condition"><option value="all">근무조건 전체</option><option value="day">주간 근무</option><option value="night">야간 근무</option><option value="shift">교대 근무</option><option value="dorm">기숙사 안내</option><option value="bus">통근버스 안내</option></select></label>
+      <label>위치 확인 상태<select id="location-reason"><option value="all">모든 위치</option><option value="needed">위치 확인 필요 전체</option><option value="address">정확한 주소 없음</option><option value="coordinates">주소는 있으나 좌표 없음</option><option value="conflict">좌표 충돌</option><option value="outside">지역 밖 근무지</option><option value="verified">위치 확인 완료</option></select></label>
+      <label>지원 상태<select id="application-stage"><option value="all">지원 상태 전체</option><option value="planned">지원 예정</option><option value="applied">지원 완료</option><option value="interview">면접</option><option value="result">결과 확인</option><option value="">미지정</option></select></label>
+    </div><p class="filter-note">월급·연봉은 만원, 시급·일급은 원 단위입니다. 범위 급여는 하한액으로 비교하며 다른 단위로 환산하지 않습니다. 근무조건은 공개 원문의 안내 문구이므로 실제 제공 조건은 원문에서 확인하세요.</p></details>
+    <section class="portal-strip" aria-label="채용사이트 선택">
+      <div class="portal-tabs" role="group" aria-label="채용사이트">
+        <button class="portal-button active" data-portal="all" aria-pressed="true"><span>전체 사이트</span><strong id="portal-all-count">0</strong><small>같은 원문을 묶어서 보기</small></button>
+        <button class="portal-button" data-portal="saramin" aria-pressed="false"><span class="portal-label saramin">사람인</span><strong id="portal-saramin-count">0</strong><small id="portal-saramin-status">아직 조회 전</small></button>
+        <button class="portal-button" data-portal="jobkorea" aria-pressed="false"><span class="portal-label jobkorea">잡코리아</span><strong id="portal-jobkorea-count">0</strong><small id="portal-jobkorea-status">아직 조회 전</small></button>
+        <button class="portal-button" data-portal="work24" aria-pressed="false"><span class="portal-label work24">고용24</span><strong id="portal-work24-count">0</strong><small id="portal-work24-status">아직 조회 전</small></button>
+      </div>
+    </section>
+    <section class="freshness-panel" aria-label="자동 갱신 상태"><b>정기 공고 갱신</b><span id="auto-status">갱신 상태 확인 중</span><small>신규는 처음 발견한 뒤 7일 · 마지막 확인 시각은 공고 아래에 표시</small></section>
+    <div class="personal-actions"><button class="button" id="manage-button">♡ 관심·지원 관리 <span id="manage-count">0</span></button><button class="button" id="history-button">공고 변경·종료 이력 <span id="history-count">0</span></button><button class="text-button" id="location-queue">위치 확인 필요 모아보기</button></div>
+    <div class="notice" id="notice" role="status" aria-live="polite">공고를 불러오고 있습니다.</div>
+    <div class="active-filters" id="active-filters" hidden></div>
+    <section class="workspace">
+      <aside class="list-panel" aria-label="채용공고 목록">
+        <div class="list-heading"><h2>채용공고 <span id="result-count">0</span></h2><button class="text-button" id="saved-only" aria-pressed="false">♡ 관심공고</button></div>
+        <div class="list-options"><span id="list-subtitle">현재 가져온 공고</span><select id="sort" aria-label="공고 정렬"><option value="default">목록 순</option><option value="newest">새로 발견한 순</option><option value="deadline">마감 임박 순</option><option value="company">회사명 순</option><option value="distance">기준점 가까운 순</option></select></div>
+        <div id="job-list" class="job-list"></div>
+        <div class="list-footer"><button class="text-button" id="export-button">↓ 현재 결과 CSV</button><button class="text-button" id="manual-button">+ 공고 직접 등록</button></div>
+      </aside>
+      <div class="map-panel">
+        <div id="map" aria-label="홍성군 예산군 근무지 지도"></div>
+        <div class="map-top"><div class="map-pill"><span class="status-dot"></span><span id="map-caption">홍성군 · 예산군 근무지</span></div><button class="button map-button" id="fit-button">⌖ 전체 위치 보기</button></div>
+        <div class="map-legend"><span><i class="dot hong"></i> 홍성군</span><span><i class="dot yesan"></i> 예산군</span><small>원은 근무지 수 · 핀은 공고 수</small></div>
+        <div class="map-welcome" id="map-welcome"><span>⌖</span><h2>출근할 곳부터 확인하세요</h2><p>저장된 공고를 불러오면 실제 근무지에 마커가 표시됩니다.<br>마커를 눌러 공고와 네이버 지도를 열어보세요.</p><button class="button primary" id="empty-refresh">최신 목록 확인</button></div>
+        <article class="detail-card" id="detail" hidden aria-label="선택한 공고"></article>
+      </div>
+    </section>
+    <footer class="page-footer"><span id="updated-at">아직 조회하지 않았습니다.</span><span>지원·마감 여부는 공고 원문에서 확인하세요. <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener noreferrer">지도 오류 제보 ↗</a></span></footer>
+  </main>
+  <dialog id="help-dialog"><div class="dialog-heading"><h2>가까운 일자리 찾는 방법</h2><button class="icon-button" data-close="help-dialog" aria-label="닫기">×</button></div>
+    <ol class="steps"><li><b>최신 목록 확인</b><p>정기적으로 확인한 사람인·잡코리아·고용24의 공고를 불러옵니다. 필터로 사이트와 지역을 선택할 수 있습니다. 마지막 원문 확인 시각과 실패 여부는 검증 기록에서 확인하세요.</p></li><li><b>지도에서 근무지 확인</b><p>마커나 공고의 ‘위치 보기’를 누르세요. 주소와 좌표가 없는 공고는 위치 확인이 필요하다고 표시합니다.</p></li><li><b>원문을 열고 지원</b><p>각 공고의 원문 버튼으로 채용 상세내용을 확인하고, ‘네이버 지도에서 보기’로 주변 교통을 살펴보세요.</p></li></ol>
+    <div class="help-note">API 키와 결제 등록이 필요 없습니다. 검색 결과의 마지막 페이지까지 확인하며 안전 상한은 군별 100페이지입니다. 조회 기록이 저장되어 중단되면 완료로 표시하지 않습니다. 최신 목록 확인 버튼은 게시된 자료를 다시 불러옵니다. 검증 기록에서 원문·상세 확인 수를 볼 수 있습니다.</div>
+    <p class="small">같은 원문 묶기는 공개된 원문 링크로 동일 공고가 확인될 때 적용합니다. 주소 대조 위치는 동일 도로명·건물번호의 공개 좌표를 재사용하고 상세 카드에 근거를 표시합니다. 기준점 거리는 직선거리입니다. 지도에서 기준점을 직접 지정하세요.</p>
+    <p class="small">온라인 버전은 정기 수집한 공고를 표시합니다. 예약 실행은 지연될 수 있으며, 마지막 목록 성공 시각과 상세 확인 시각은 검증 기록에서 확인하세요. 원문 접속 확인이나 오류가 생기면 기존 자료를 보존합니다. 신규는 사이트 등록일이 아니라 이 앱에서 처음 발견한 뒤 7일 동안 표시합니다.</p>
+    <p class="small">V7는 검색 조건 저장, 지난 방문 이후 공고, 읽음 표시, 급여·고용형태·학력 복수 선택 필터, 지원 상태·메모, 변경·종료 이력을 제공합니다. 첫 방문에는 비교할 이전 방문이 없으며 30분 이내 새로고침은 같은 방문으로 취급합니다. 검색 조건 저장 시 지도 기준점도 이 브라우저에 저장합니다. 변경 이력은 기존 V5에서 이어진 기록 시작 이후 확인된 변화만 보여 주며, 목록에서 사라졌다는 이유만으로 마감됐다고 표시하지 않습니다.</p>
+    <p class="small">학력은 여러 개 선택할 수 있습니다. 고졸 기준 선택은 학력무관·중졸 이하·고졸을 선택하며, 고졸 이상과 고졸부터 시작하는 범위도 포함합니다. 초대졸·대졸·대학원 학위가 최소 조건인 공고는 제외합니다. 학력 미기재·조건 해석 불가·원문별 조건 불일치는 학력 확인 필요로 구분합니다. 학력 선택도 검색 조건에 저장됩니다. 카드와 상세에는 학력 원문을 표시합니다.</p>
+    <p class="small">무료 지도는 OpenStreetMap을 사용합니다. 현재 보는 화면의 지도만 불러오며 출처를 표시합니다. <a href="https://operations.osmfoundation.org/policies/tiles/" target="_blank" rel="noopener noreferrer">지도 이용정책</a></p>
+  </dialog>
+  <dialog id="quality-dialog"><div class="dialog-heading"><h2>공고·위치 검증 기록</h2><button class="icon-button" data-close="quality-dialog" aria-label="검증 기록 닫기">×</button></div><div id="quality-content"></div><button class="button primary full" id="reverify-button">최신 검증 기록 확인</button><p class="small">마지막 수집 결과를 다시 불러옵니다. 개별 지원 조건과 마감 여부는 각 공고 원문에서 확인하세요.</p></dialog>
+  <dialog id="manual-dialog"><form id="manual-form"><div class="dialog-heading"><h2>채용공고 직접 등록</h2><button type="button" class="icon-button" data-close="manual-dialog" aria-label="닫기">×</button></div><p class="small">공개 조회가 어려운 공고를 링크로 추가할 수 있습니다. 등록한 공고와 직접 지정한 위치는 이 브라우저에만 저장됩니다.</p>
+    <label>사람인·잡코리아·고용24 공고 링크<input name="url" type="url" required placeholder="공고 상세페이지 주소를 붙여 넣으세요"></label>
+    <label>회사명<input name="company" required maxlength="120"></label><label>공고 제목<input name="title" required maxlength="200"></label><label>근무 지역<select name="region"><option>홍성군</option><option>예산군</option></select></label>
+    <p class="form-error" id="manual-error" role="alert"></p><button class="button primary full" type="submit">공고 등록</button>
+  </form></dialog>
+  <dialog id="manage-dialog" class="wide-dialog"><div class="dialog-heading"><h2>관심·지원 관리</h2><button class="icon-button" data-close="manage-dialog" aria-label="지원 관리 닫기">×</button></div><p class="small">메모와 지원 상태는 이 브라우저에만 저장합니다. 다른 사람과 공유되지 않습니다. 각 공고의 저장 버튼을 누르세요. 종료되거나 목록에서 사라진 공고도 관리할 수 있습니다.</p><select id="manage-stage" aria-label="관리 목록 지원 상태"><option value="all">전체 관리 공고</option><option value="planned">지원 예정</option><option value="applied">지원 완료</option><option value="interview">면접</option><option value="result">결과 확인</option><option value="">미지정</option></select><div id="manage-list"></div></dialog>
+  <dialog id="history-dialog" class="wide-dialog"><div class="dialog-heading"><h2>공고 변경·종료 이력</h2><button class="icon-button" data-close="history-dialog" aria-label="변경 이력 닫기">×</button></div><p class="small" id="history-help"></p><div class="history-controls"><select id="history-kind" aria-label="이력 종류"><option value="all">모든 이력</option><option value="changed">내용 변경</option><option value="confirmed">정보 새로 확인</option><option value="closed">마감 확인·마감일 경과</option><option value="missing">목록에서 사라짐</option><option value="added">신규 발견</option><option value="reappeared">목록 재등장</option></select><input id="history-query" type="search" aria-label="이력 회사명 제목 검색" placeholder="회사명·제목 검색"></div><div id="history-list"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

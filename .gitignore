@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+data/*
+!data/jobs-v7.json
+!data/details-v7.json
+!data/discovery-v7.json
+!data/history-v7.json
+!data/origins-v7.json
