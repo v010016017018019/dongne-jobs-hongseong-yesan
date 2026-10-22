@@ -35,6 +35,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Refresh public recruitment listings'
+          git pull --rebase origin main
           git push
       - name: Report incomplete source checks
         if: steps.refresh.outcome == 'failure'
