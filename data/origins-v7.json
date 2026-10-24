@@ -2263,5 +2263,10 @@
     "originId": "work24:VALIDATION:K172112610230050",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112610230050&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "sourceCheckedAt": "2026-10-23T11:54:11.334Z"
+  },
+  "work24:CSI:55352939": {
+    "originId": "saramin:55352939",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55352939",
+    "sourceCheckedAt": "2026-10-24T04:49:22.946Z"
   }
 }

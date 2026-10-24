@@ -1293,7 +1293,7 @@
         "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55004521"
       }
     ],
-    "checkedAt": "2026-10-22T02:31:03.600Z"
+    "checkedAt": "2026-10-24T04:49:38.328Z"
   },
   "saramin:55005666": {
     "sites": [],
@@ -41724,5 +41724,49 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-10-23T21:33:06.684Z"
+  },
+  "work24:CSI:55352939": {
+    "sites": [
+      {
+        "address": "(32447) 충남 예산군 응봉면 충서로 254",
+        "lat": 36.6612868886607,
+        "lng": 126.773956054494,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-24T04:49:24.678Z"
+      }
+    ],
+    "address": "(32447) 충남 예산군 응봉면 충서로 254",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "originId": "saramin:55352939",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55352939",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-10-24T04:49:22.946Z",
+    "checkedAt": "2026-10-24T04:49:24.697Z"
+  },
+  "saramin:55352939": {
+    "sites": [
+      {
+        "address": "(32447) 충남 예산군 응봉면 충서로 254",
+        "lat": 36.6612868886607,
+        "lng": 126.773956054494,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-24T04:49:36.860Z"
+      }
+    ],
+    "address": "(32447) 충남 예산군 응봉면 충서로 254",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "checkedAt": "2026-10-24T04:49:36.872Z"
   }
 }
