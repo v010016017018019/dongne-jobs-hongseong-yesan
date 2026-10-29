@@ -8855,7 +8855,8 @@
     "employment": "FULL_TIME",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:52.501Z"
+    "checkedAt": "2026-10-28T05:57:52.501Z",
+    "verificationError": "잡코리아 접속 실패(HTTP 500). 해당 사이트 조회를 중단했습니다."
   },
   "jobkorea:50155089": {
     "sites": [],
@@ -11318,7 +11319,8 @@
     "employment": "FULL_TIME · CONTRACTOR · CONTRACTOR",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:59.249Z"
+    "checkedAt": "2026-10-28T05:57:59.249Z",
+    "verificationError": "잡코리아 접속 실패(HTTP 500). 해당 사이트 조회를 중단했습니다."
   },
   "jobkorea:50019830": {
     "sites": [
@@ -37172,7 +37174,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:27.201Z"
+    "checkedAt": "2026-10-29T06:03:10.396Z"
   },
   "work24:VALIDATION:K150112610210009": {
     "sites": [
@@ -37181,7 +37183,7 @@
         "lat": 36.6271091003703,
         "lng": 126.714357343122,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:28.373Z"
+        "confirmedAt": "2026-10-29T06:03:11.609Z"
       }
     ],
     "address": "충청남도 홍성군 금마면 금북로 111, 이스턴R&E 홍성공장",
@@ -37192,7 +37194,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 12개월 (계약기간 만료 후 상용직 전환 검토)",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:28.414Z"
+    "checkedAt": "2026-10-29T06:03:11.653Z"
   },
   "work24:VALIDATION:KF11522610210001": {
     "sites": [],
@@ -37204,7 +37206,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 1개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:29.604Z"
+    "checkedAt": "2026-10-29T06:03:12.779Z"
   },
   "saramin:55352354": {
     "sites": [
@@ -37236,7 +37238,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:30.816Z"
+    "checkedAt": "2026-10-29T06:03:14.001Z"
   },
   "saramin:55352268": {
     "sites": [
@@ -37265,7 +37267,7 @@
         "lat": 36.658060846751795,
         "lng": 126.69483582288402,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:32.040Z"
+        "confirmedAt": "2026-10-29T06:03:15.142Z"
       }
     ],
     "address": "충청남도 홍성군 홍북읍 홍북로573번길 83",
@@ -37276,7 +37278,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:32.081Z"
+    "checkedAt": "2026-10-29T06:03:15.185Z"
   },
   "saramin:55352038": {
     "sites": [
@@ -37327,7 +37329,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:33.245Z"
+    "checkedAt": "2026-10-29T06:03:16.458Z"
   },
   "work24:VALIDATION:K172222610210003": {
     "sites": [
@@ -37336,7 +37338,7 @@
         "lat": 36.658060846751795,
         "lng": 126.69483582288402,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:35.413Z"
+        "confirmedAt": "2026-10-29T06:03:18.558Z"
       }
     ],
     "address": "충청남도 홍성군 홍북읍 홍북로573번길 83",
@@ -37347,7 +37349,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:35.457Z"
+    "checkedAt": "2026-10-29T06:03:18.603Z"
   },
   "saramin:55351809": {
     "sites": [
@@ -37376,7 +37378,7 @@
         "lat": 36.49004655803471,
         "lng": 126.64761409587798,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:35.742Z"
+        "confirmedAt": "2026-10-29T06:03:19.086Z"
       }
     ],
     "address": "충청남도 홍성군 광천읍 오서길 209-146, 한흥농장",
@@ -37387,7 +37389,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "고졸~대졸(2~3년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:35.786Z"
+    "checkedAt": "2026-10-29T06:03:19.132Z"
   },
   "saramin:55351267": {
     "sites": [
@@ -37890,7 +37892,8 @@
     "employment": "CONTRACTOR",
     "education": "고졸 이상",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:48.694Z"
+    "checkedAt": "2026-10-28T05:57:48.694Z",
+    "verificationError": "잡코리아에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
   },
   "jobkorea:50213677": {
     "sites": [],
@@ -38895,7 +38898,7 @@
         "lat": 36.563053110802905,
         "lng": 126.65325092914898,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:20.761Z"
+        "confirmedAt": "2026-10-29T06:03:04.317Z"
       }
     ],
     "address": "충청남도 홍성군 구항면 충서로966번길 48",
@@ -38906,7 +38909,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:20.804Z"
+    "checkedAt": "2026-10-29T06:03:04.359Z"
   },
   "work24:VALIDATION:K172222610220018": {
     "sites": [
@@ -38915,7 +38918,7 @@
         "lat": 36.6569935086234,
         "lng": 126.675557020735,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:21.978Z"
+        "confirmedAt": "2026-10-29T06:03:05.600Z"
       }
     ],
     "address": "충청남도 홍성군 홍북읍 충남대로 45, 5층 부속실 (정부충남지방합동청사)",
@@ -38926,7 +38929,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 11개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:22.020Z"
+    "checkedAt": "2026-10-29T06:03:05.647Z"
   },
   "work24:VALIDATION:K172222610220011": {
     "sites": [
@@ -38935,7 +38938,7 @@
         "lat": 36.6152760532632,
         "lng": 126.604059877969,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:24.183Z"
+        "confirmedAt": "2026-10-29T06:03:06.778Z"
       }
     ],
     "address": "충청남도 홍성군 구항면 구성북로 295-34, 구성북로 295-34 아이에스테크",
@@ -38946,7 +38949,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:24.221Z"
+    "checkedAt": "2026-10-29T06:03:06.829Z"
   },
   "saramin:55365249": {
     "sites": [
@@ -38978,7 +38981,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "대졸(2~3년)~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:24.536Z"
+    "checkedAt": "2026-10-29T06:03:08.017Z"
   },
   "saramin:55365227": {
     "sites": [
@@ -39010,7 +39013,7 @@
     "employment": "정규직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:26.011Z"
+    "checkedAt": "2026-10-29T06:03:09.012Z"
   },
   "saramin:55365203": {
     "sites": [
@@ -39434,7 +39437,7 @@
         "lat": 36.631825957594806,
         "lng": 126.67144316584401,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:16.711Z"
+        "confirmedAt": "2026-10-29T06:03:00.762Z"
       }
     ],
     "address": "충청남도 홍성군 홍북로 55-70, (주)제이앤케이건설(야적장)",
@@ -39445,7 +39448,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:16.760Z"
+    "checkedAt": "2026-10-29T06:03:00.808Z"
   },
   "work24:VALIDATION:K172222610220027": {
     "sites": [
@@ -39454,7 +39457,7 @@
         "lat": 36.631825957594806,
         "lng": 126.67144316584401,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:18.922Z"
+        "confirmedAt": "2026-10-29T06:03:01.955Z"
       }
     ],
     "address": "충청남도 홍성군 홍북로 55-70, (주)제이앤케이건설(야적장)",
@@ -39465,7 +39468,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "대졸(2~3년)~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:18.971Z"
+    "checkedAt": "2026-10-29T06:03:01.998Z"
   },
   "work24:VALIDATION:K172222610220026": {
     "sites": [],
@@ -39477,7 +39480,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:19.462Z"
+    "checkedAt": "2026-10-29T06:03:03.244Z"
   },
   "work24:VALIDATION:K172222610220023": {
     "sites": [
@@ -40849,7 +40852,7 @@
         "lat": 36.575808987384,
         "lng": 126.65424994385099,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:10.574Z"
+        "confirmedAt": "2026-10-29T06:02:54.779Z"
       }
     ],
     "address": "충청남도 홍성군 홍성읍 충서로 1121-32, 2층 (홍성가족상담센터)",
@@ -40860,7 +40863,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 1개월 (계약기간 만료 후 상용직 전환 검토)",
     "education": "대졸(2~3년)~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:10.618Z"
+    "checkedAt": "2026-10-29T06:02:54.823Z"
   },
   "work24:VALIDATION:K172222610230018": {
     "sites": [],
@@ -40872,7 +40875,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:11.839Z"
+    "checkedAt": "2026-10-29T06:02:56.173Z"
   },
   "work24:VALIDATION:K180032610230048": {
     "sites": [
@@ -40881,7 +40884,7 @@
         "lat": 36.629028545372606,
         "lng": 126.529380660051,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:12.970Z"
+        "confirmedAt": "2026-10-29T06:02:57.383Z"
       }
     ],
     "address": "충청남도 홍성군 산단로 467",
@@ -40892,7 +40895,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 24개월 (계약기간 만료 후 상용직 전환 검토)",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:13.015Z"
+    "checkedAt": "2026-10-29T06:02:57.427Z"
   },
   "work24:CSI:55379268": {
     "sites": [
@@ -40901,7 +40904,7 @@
         "lat": 36.6575910853907,
         "lng": 126.68616511725,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-28T05:57:16.160Z"
+        "confirmedAt": "2026-10-29T06:03:00.076Z"
       }
     ],
     "address": "(32257) 충남 홍성군 홍북읍 애향2길 31, 101호 YG축산컨설팅",
@@ -40915,8 +40918,8 @@
     "originId": "saramin:55379268",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55379268",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-10-28T05:57:13.996Z",
-    "checkedAt": "2026-10-28T05:57:16.174Z"
+    "originSourceCheckedAt": "2026-10-29T06:02:58.499Z",
+    "checkedAt": "2026-10-29T06:03:00.092Z"
   },
   "saramin:55379268": {
     "sites": [
@@ -43868,7 +43871,7 @@
     "employment": "정규직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:09.331Z"
+    "checkedAt": "2026-10-29T06:02:54.391Z"
   },
   "saramin:55403127": {
     "sites": [],
@@ -45579,7 +45582,7 @@
         "lat": 36.56673566446511,
         "lng": 126.65338528320001,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:03.647Z"
+        "confirmedAt": "2026-10-29T06:02:42.643Z"
       }
     ],
     "address": "충청남도 홍성군 구항면 충서로966번길 41-66",
@@ -45590,7 +45593,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:03.709Z"
+    "checkedAt": "2026-10-29T06:02:42.683Z"
   },
   "work24:VALIDATION:K172222610280005": {
     "sites": [],
@@ -45609,7 +45612,7 @@
         "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222610280005&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet"
       }
     ],
-    "checkedAt": "2026-10-28T05:57:04.882Z"
+    "checkedAt": "2026-10-29T06:02:44.382Z"
   },
   "work24:VALIDATION:K172222610280001": {
     "sites": [
@@ -45618,7 +45621,7 @@
         "lat": 36.63284562333739,
         "lng": 126.539173559987,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:05.905Z"
+        "confirmedAt": "2026-10-29T06:02:44.701Z"
       }
     ],
     "address": "충청남도 홍성군 갈산면 내포로 1607-24",
@@ -45629,7 +45632,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:05.952Z"
+    "checkedAt": "2026-10-29T06:02:44.745Z"
   },
   "work24:CSI:55412157": {
     "sites": [
@@ -45638,7 +45641,7 @@
         "lat": 36.7676219078646,
         "lng": 126.726006087109,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-28T05:57:08.755Z"
+        "confirmedAt": "2026-10-29T06:02:53.209Z"
       }
     ],
     "address": "(32400) 충남 예산군 고덕면 예당산단4길 80",
@@ -45647,13 +45650,13 @@
     "factsVersion": 5,
     "salary": "면접 후 결정",
     "employment": "정규직(수습기간)3개월",
-    "education": "대졸(4년)이상",
+    "education": "대졸(2,3년)이상(예정자가능)",
     "conditions": [],
     "originId": "saramin:55412157",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55412157",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-10-28T05:57:06.929Z",
-    "checkedAt": "2026-10-28T05:57:08.770Z"
+    "originSourceCheckedAt": "2026-10-29T06:02:47.233Z",
+    "checkedAt": "2026-10-29T06:02:53.227Z"
   },
   "saramin:55416135": {
     "sites": [
@@ -45816,7 +45819,7 @@
         "lat": 36.64708117075641,
         "lng": 126.75087362860998,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:37.242Z"
+        "confirmedAt": "2026-10-29T06:03:29.684Z"
       }
     ],
     "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
@@ -45827,7 +45830,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:37.284Z"
+    "checkedAt": "2026-10-29T06:03:29.729Z"
   },
   "work24:VALIDATION:K172112610280021": {
     "sites": [
@@ -45836,7 +45839,7 @@
         "lat": 36.64708117075641,
         "lng": 126.75087362860998,
         "source": "고용24 근무예정지",
-        "confirmedAt": "2026-10-28T05:57:38.411Z"
+        "confirmedAt": "2026-10-29T06:03:30.892Z"
       }
     ],
     "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
@@ -45847,7 +45850,7 @@
     "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
     "education": "고졸~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:38.455Z"
+    "checkedAt": "2026-10-29T06:03:30.939Z"
   },
   "work24:VALIDATION:K172112610280020": {
     "sites": [],
@@ -45859,7 +45862,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "고졸~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:39.626Z"
+    "checkedAt": "2026-10-29T06:03:32.191Z"
   },
   "work24:VALIDATION:K172112610280019": {
     "sites": [],
@@ -45871,7 +45874,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "고졸~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:40.950Z"
+    "checkedAt": "2026-10-29T06:03:33.333Z"
   },
   "work24:VALIDATION:K172112610280008": {
     "sites": [],
@@ -45883,7 +45886,7 @@
     "employment": "기간의 정함이 없는 근로계약",
     "education": "고졸~대졸(4년)",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:42.066Z"
+    "checkedAt": "2026-10-29T06:03:34.512Z"
   },
   "work24:CJK:51850141": {
     "sites": [],
@@ -45895,7 +45898,7 @@
     "employment": "정규직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-10-28T05:57:43.086Z"
+    "checkedAt": "2026-10-29T06:03:35.573Z"
   },
   "work24:CSI:55412867": {
     "sites": [],
@@ -45910,8 +45913,8 @@
     "originId": "saramin:55412867",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55412867",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-10-28T05:57:45.260Z",
-    "checkedAt": "2026-10-28T05:57:46.645Z"
+    "originSourceCheckedAt": "2026-10-29T06:03:37.028Z",
+    "checkedAt": "2026-10-29T06:03:38.703Z"
   },
   "work24:CJK:51850991": {
     "sites": [],
@@ -45930,7 +45933,7 @@
         "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=51850991&infoTypeCd=CJK&infoTypeGroup=tb_workinfogubun"
       }
     ],
-    "checkedAt": "2026-10-28T05:57:47.269Z"
+    "checkedAt": "2026-10-29T06:03:39.350Z"
   },
   "work24:CSI:55389618": {
     "sites": [
@@ -45939,7 +45942,7 @@
         "lat": 36.7068410820371,
         "lng": 126.839907018723,
         "source": "사람인 근무지",
-        "confirmedAt": "2026-10-28T05:57:50.793Z"
+        "confirmedAt": "2026-10-29T06:03:43.382Z"
       }
     ],
     "address": "(32423) 충남 예산군 예산읍 벚꽃로296번길 3",
@@ -45953,8 +45956,8 @@
     "originId": "saramin:55389618",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55389618",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-10-28T05:57:48.451Z",
-    "checkedAt": "2026-10-28T05:57:50.807Z"
+    "originSourceCheckedAt": "2026-10-29T06:03:41.737Z",
+    "checkedAt": "2026-10-29T06:03:43.398Z"
   },
   "jobkorea:50255940": {
     "sites": [],
@@ -46981,5 +46984,212 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-10-28T22:44:28.112Z"
+  },
+  "work24:VALIDATION:KJNP002610290001": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍북읍 신대로 54, 단지 내부 (효성해링턴플레이스)",
+        "lat": 36.6514987682545,
+        "lng": 126.67459692359698,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:02:26.378Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍북읍 신대로 54, 단지 내부 (효성해링턴플레이스)",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 174만원 ~ 174만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:02:26.443Z"
+  },
+  "work24:VALIDATION:K172222610290003": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍동면 금평1길 78",
+        "lat": 36.54473189708961,
+        "lng": 126.699817715272,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:02:27.581Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍동면 금평1길 78",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 230만원 ~ 240만원 이하",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:02:27.637Z"
+  },
+  "work24:VALIDATION:K172222610290002": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍동면 금평1길 78",
+        "lat": 36.54473189708961,
+        "lng": 126.699817715272,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:02:28.789Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍동면 금평1길 78",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 225만원 이상",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:02:28.842Z"
+  },
+  "work24:VALIDATION:K180032610290010": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 산단로 467",
+        "lat": 36.629028545372606,
+        "lng": 126.529380660051,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:02:29.970Z"
+      }
+    ],
+    "address": "충청남도 홍성군 산단로 467",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 243만원 이상",
+    "employment": "기간의 정함이 있는 근로계약 · 24개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:02:30.021Z"
+  },
+  "work24:CSI:55423638": {
+    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+  },
+  "work24:VALIDATION:K172112610290031": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 덕산면 덕산온천로 440",
+        "lat": 36.704712529200016,
+        "lng": 126.6733293623,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:03:20.301Z"
+      }
+    ],
+    "address": "충청남도 예산군 덕산면 덕산온천로 440",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 223만원 이상",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:03:20.354Z"
+  },
+  "work24:VALIDATION:K172112610290028": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 예산읍 예산로 201, 국민은행 2층",
+        "lat": 36.6800270003634,
+        "lng": 126.84694499656702,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-10-29T06:03:21.653Z"
+      }
+    ],
+    "address": "충청남도 예산군 예산읍 예산로 201, 국민은행 2층",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 250만원 이상 협의가능",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "고졸",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:03:21.698Z"
+  },
+  "work24:VALIDATION:K172112610290009": {
+    "sites": [],
+    "address": "충청남도 예산군 예산읍 군청로 88",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320원 ~ 10,320원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 12개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:03:22.901Z"
+  },
+  "work24:CSI:55423575": {
+    "sites": [
+      {
+        "address": "충남 예산군 고덕면 오추리 852 (예당일반산업단지 내)",
+        "lat": 36.7453168198,
+        "lng": 126.7006711019,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-29T06:03:25.539Z"
+      }
+    ],
+    "address": "충남 예산군 고덕면 오추리 852 (예당일반산업단지 내)",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관(예정자가능)",
+    "conditions": [],
+    "originId": "saramin:55423575",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55423575",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-10-29T06:03:23.891Z",
+    "checkedAt": "2026-10-29T06:03:25.553Z"
+  },
+  "work24:CSI:55423624": {
+    "sites": [
+      {
+        "address": "충남 예산군 고덕면 오추리 852 (예당일반산업단지 내)",
+        "lat": 36.7453168198,
+        "lng": 126.7006711019,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-10-29T06:03:27.844Z"
+      }
+    ],
+    "address": "충남 예산군 고덕면 오추리 852 (예당일반산업단지 내)",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "originId": "saramin:55423624",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55423624",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-10-29T06:03:26.189Z",
+    "checkedAt": "2026-10-29T06:03:27.858Z"
+  },
+  "work24:KOS:233256": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "면접 시 협의",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:03:28.491Z"
+  },
+  "work24:CJK:51856473": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "-",
+    "employment": "계약직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-10-29T06:03:40.526Z"
   }
 }
