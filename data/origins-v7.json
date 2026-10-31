@@ -1757,7 +1757,7 @@
   "jobkorea:WN:5656393": {
     "originId": "work24:VALIDATION:K172112610010007",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112610010007&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-10-30T06:04:42.871Z"
+    "sourceCheckedAt": "2026-10-31T12:50:58.520Z"
   },
   "jobkorea:WN:5652987": {
     "originId": "work24:VALIDATION:K172112609290054",
@@ -1837,7 +1837,7 @@
   "jobkorea:WN:5635864": {
     "originId": "work24:VALIDATION:K172112609170051",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112609170051&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-10-31T06:22:13.764Z"
+    "sourceCheckedAt": "2026-10-31T12:51:02.023Z"
   },
   "jobkorea:WN:5632692": {
     "originId": "work24:VALIDATION:K172112609160011",
@@ -2227,7 +2227,7 @@
   "work24:CSI:55379268": {
     "originId": "saramin:55379268",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55379268",
-    "sourceCheckedAt": "2026-10-30T06:03:24.470Z"
+    "sourceCheckedAt": "2026-10-31T12:49:38.534Z"
   },
   "work24:CSI:55378066": {
     "originId": "saramin:55378066",
@@ -2447,7 +2447,7 @@
   "work24:CSI:55412157": {
     "originId": "saramin:55412157",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55412157",
-    "sourceCheckedAt": "2026-10-30T06:03:18.316Z"
+    "sourceCheckedAt": "2026-10-31T12:49:32.519Z"
   },
   "work24:CSI:55412867": {
     "originId": "saramin:55412867",
@@ -2607,12 +2607,12 @@
   "work24:CSI:55434452": {
     "originId": "saramin:55434452",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55434452",
-    "sourceCheckedAt": "2026-10-30T06:03:33.886Z"
+    "sourceCheckedAt": "2026-10-31T12:49:48.339Z"
   },
   "jobkorea:WN:5709745": {
     "originId": "work24:VALIDATION:K172112610300005",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112610300005&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-10-30T06:04:40.172Z"
+    "sourceCheckedAt": "2026-10-31T12:50:55.162Z"
   },
   "work24:CSI:55438309": {
     "originId": "saramin:55438309",
