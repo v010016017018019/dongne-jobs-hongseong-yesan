@@ -2,6 +2,7 @@ import http from 'node:http';
 import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {load} from 'cheerio';
 import {isOpen,mergeJobs,text,validCoordinate,detailedAddress} from './lib/jobs.mjs';
 import {PORTALS,jobLink,listRequest,searchUrl,parsePortalList,detailRequest,parsePortalDetail,manualPortalJob,affiliatedWork24Url,affiliatedSaraminUrl} from './lib/providers.mjs';
 import {verifiedJobs,qualitySummary} from './lib/quality.mjs';
@@ -66,16 +67,24 @@ function publicHtml(request,portal){
     if(!response.ok)throw new Error(`${label} 접속 실패(HTTP ${response.status}). 해당 사이트 조회를 중단했습니다.`);
     if(/jkConfirm\.aspx|captcha/i.test(response.url||''))throw new Error(`${label}에서 접속 확인을 요청했습니다. 자동 조회를 중지하고 기존 자료를 표시합니다.`);
     const html=await response.text();
-    if(html.length>5000000||/access denied|비정상적인 접근|captcha/i.test(html.slice(0,5000))||/보안정책에\s*의하여|보안문자(?:를)?\s*입력/.test(html))throw new Error(`${label}에서 접속 확인을 요청했습니다. 자동 조회를 중지하고 기존 자료를 표시합니다.`);
+    if(html.length>5000000)throw new Error(`${label}에서 접속 확인을 요청했습니다. 자동 조회를 중지하고 기존 자료를 표시합니다.`);
+    let captchaChallenge=false;
+    if(/captcha/i.test(html)){
+      const $=load(html),body=$('body').clone();body.find('script,style,noscript').remove();
+      const visible=body.text();
+      captchaChallenge=/\b(?:re)?captcha\b/i.test($('title').text())||/^\s*(?:re)?captcha\s*$/i.test(visible)||/\b(?:re)?captcha\b.{0,80}\b(?:verification|verify|challenge|required|complete|solve|enter)\b|\b(?:verification|verify|challenge|required|complete|solve|enter)\b.{0,80}\b(?:re)?captcha\b/i.test(visible)||$('iframe[src*="/recaptcha/api2/bframe"],iframe[src*="/recaptcha/enterprise/bframe"],form[action*="captcha"]').length>0;
+    }
+    if(/access denied|비정상적인 접근/i.test(html.slice(0,5000))||captchaChallenge||/보안정책에\s*의하여|보안문자(?:를)?\s*입력/.test(html))throw new Error(`${label}에서 접속 확인을 요청했습니다. 자동 조회를 중지하고 기존 자료를 표시합니다.`);
     return html;
   });fetchState.queue=task.catch(()=>{});return task;
 }
 async function collect(maxPages=100,portals=Object.keys(PORTALS),force=false,trigger='manual'){
   status={running:true,portal:null,phase:'사이트별 공고와 근무지 재검증 중',completed:0,total:0,error:'',lastStartedAt:new Date().toISOString(),trigger,progress:{}};
-  const errors=[];
+  const paused=trigger==='automatic'?Object.keys(PORTALS).filter(portal=>store.providers[portal].pausedForAccess&&!portals.includes(portal)):[];
+  const errors=paused.map(portal=>`${PORTALS[portal]} 접속 확인 대기 중입니다. 기존 자료를 표시합니다.`);
   try{
     await Promise.all(portals.map(async portal=>{
-      const label=PORTALS[portal],meta=store.providers[portal],progress={phase:'목록 확인 중',completed:0,total:0,running:true};status.progress[portal]=progress;
+      const label=PORTALS[portal],meta=store.providers[portal],progress={phase:'목록 확인 중',completed:0,total:0,running:true},previous=store.jobs.filter(job=>job.portal===portal);status.progress[portal]=progress;
       meta.lastStartedAt=new Date().toISOString();meta.error='';meta.interrupted=false;meta.pausedForAccess=false;meta.collectionComplete=false;meta.trigger=trigger;meta.detailsFinishedAt=null;await saveJson('jobs-v7.json',store);
       const update=()=>{status.completed=Object.values(status.progress).reduce((sum,p)=>sum+p.completed,0);status.total=Object.values(status.progress).reduce((sum,p)=>sum+p.total,0);};
       try{
@@ -89,17 +98,22 @@ async function collect(maxPages=100,portals=Object.keys(PORTALS),force=false,tri
             const fingerprint=parsed.jobs.map(job=>job.id).join(',');
             if(fingerprint&&seen.has(fingerprint)){truncated.push(region);break;}seen.add(fingerprint);
             collected.push(...parsed.jobs);pages[region]=page;
-            if(parsed.pageItems<parsed.pageSize||(Number.isFinite(totals[region])&&page*parsed.pageSize>=totals[region]))break;
+            if(parsed.pageItems<parsed.pageSize){
+              if(Number.isFinite(totals[region])&&(page-1)*parsed.pageSize+parsed.pageItems<totals[region])truncated.push(region);
+              break;
+            }
+            if(Number.isFinite(totals[region])&&page*parsed.pageSize>=totals[region])break;
             if(page===maxPages)truncated.push(region);
           }
         }
         const jobs=mergeJobs(collected);
         if(truncated.length){meta.lastAttemptPages=pages;meta.lastAttemptTruncated=truncated;throw new Error(`${label} 목록을 끝까지 확인하지 못했습니다. 기존 공고를 유지합니다. (${truncated.join(' · ')})`);}
-        const previous=store.jobs.filter(job=>job.portal===portal),at=new Date().toISOString(),ids=new Set(jobs.map(job=>job.id));
+        const at=new Date().toISOString(),ids=new Set(jobs.map(job=>job.id));
         const added=jobs.filter(job=>!Object.hasOwn(discovery.firstSeenById,job.id)).length;
-        store.jobs=[...store.jobs.filter(job=>job.portal!==portal),...jobs];
+        const removed=previous.filter(job=>!ids.has(job.id));
+        store.jobs=[...store.jobs.filter(job=>job.portal!==portal),...jobs,...removed];
         recordDiscovery(discovery,mergeJobs([...store.jobs,...manual]),detailCache,at);
-        Object.assign(meta,{fetchedAt:at,totals,pages,truncated,lastAttemptTruncated:[],lastChanges:{at,added,removed:previous.filter(job=>!ids.has(job.id)).length}});
+        Object.assign(meta,{fetchedAt:at,totals,pages,truncated,lastAttemptTruncated:[],lastChanges:{at,added,removed:0}});
         await saveJson('discovery-v7.json',discovery);await saveJson('jobs-v7.json',store);
         const pending=jobs.filter(job=>(!overrides[job.id]||detailCache[job.id]?.factsVersion!==5)&&(force||job.affiliate==='고용24'&&origins[job.id]&&!detailCache[job.id]?.originId||detailCache[job.id]?.factsVersion!==5||!detailCache[job.id]?.checkedAt||detailCache[job.id]?.verificationError||Date.now()-Date.parse(detailCache[job.id].checkedAt)>86400000));
         progress.total=pending.length;progress.phase='근무지 재검증';meta.detailsTotal=jobs.length;update();
@@ -132,6 +146,7 @@ async function collect(maxPages=100,portals=Object.keys(PORTALS),force=false,tri
         meta.failedDetails=failed;meta.detailsVerified=jobs.filter(item=>overrides[item.id]||detailCache[item.id]?.checkedAt&&!detailCache[item.id]?.verificationError).length;
         meta.collectionComplete=!truncated.length&&!failed.length;meta.detailsFinishedAt=new Date().toISOString();progress.phase=failed.length?`${failed.length}개 재확인 필요`:'검증 완료';
         if(failed.length){meta.error=`${label} 상세공고 ${failed.length}개 재확인 필요`;errors.push(meta.error);}
+        else{store.jobs=[...store.jobs.filter(job=>job.portal!==portal),...jobs];meta.lastChanges.removed=removed.length;}
       }catch(error){meta.error=error.message;if(/접속 확인/.test(error.message))meta.pausedForAccess=true;errors.push(error.message);recordDiscovery(discovery,mergeJobs([...store.jobs,...manual]),detailCache);await saveJson('discovery-v7.json',discovery);await saveJson('details-v7.json',detailCache);}
       progress.running=false;progress.error=meta.error;
       await saveJson('jobs-v7.json',store);

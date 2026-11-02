@@ -39,8 +39,8 @@ export function conditionTags(value){
 }
 export function jobConditions(job){return [...new Map([...conditionTags([job.title,job.category].filter(Boolean).join(' / ')),...(job.conditions||[]).filter(tag=>conditionTags(tag.evidence).some(found=>found.id===tag.id))].map(tag=>[tag.id,tag])).values()];}
 export function locationReason(job){
-  if(job.sites?.length)return 'verified';
   if(job.coordinateConflict)return 'conflict';
+  if(job.sites?.length)return 'verified';
   if(job.locationStatus==='outside')return 'outside';
   return job.exactAddress?'coordinates':'address';
 }
