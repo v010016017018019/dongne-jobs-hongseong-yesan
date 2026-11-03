@@ -13,7 +13,7 @@ export function kmBetween(a,b) {
   return 6371*2*Math.atan2(Math.sqrt(h),Math.sqrt(Math.max(0,1-h)));
 }
 export function distanceFrom(job,point) {
-  return point&&job.sites?.length?Math.min(...job.sites.map(site=>kmBetween(point,site))):Infinity;
+  return point&&!job.coordinateConflict&&job.sites?.length?Math.min(...job.sites.map(site=>kmBetween(point,site))):Infinity;
 }
 export function civilDaysUntil(expiresAt,now=Date.now()) {
   return Math.floor((Date.parse(expiresAt)+32400000)/86400000)-Math.floor((now+32400000)/86400000);
@@ -35,7 +35,7 @@ export function filterJobs(jobs,filter,saved=new Set(),personal={}) {
   const result=groups.filter(job=>{
     if(!featureMatches(job,filter,personal))return false;
     if(filter.region!=='all'&&!job.regions.includes(filter.region))return false;
-    if(filter.locatedOnly&&!job.sites.length)return false;
+    if(filter.locatedOnly&&(job.coordinateConflict||!job.sites.length))return false;
     if(filter.savedOnly&&!saved.has(favoriteKey(job)))return false;
     if(filter.newOnly&&!job.isNew)return false;
     if(filter.scope==='local'&&job.locationStatus==='outside'&&!job.sites.length)return false;
@@ -46,7 +46,7 @@ export function filterJobs(jobs,filter,saved=new Set(),personal={}) {
     if(filter.soon&&(!job.expiresAt||civilDaysUntil(job.expiresAt)>7))return false;
     const distance=distanceFrom(job,filter.reference);
     if(filter.reference&&Number.isFinite(filter.radius)&&distance>filter.radius)return false;
-    if(filter.visibleOnly&&filter.bounds&&!job.sites.some(site=>site.lat>=filter.bounds.south&&site.lat<=filter.bounds.north&&site.lng>=filter.bounds.west&&site.lng<=filter.bounds.east))return false;
+    if(filter.visibleOnly&&filter.bounds&&(job.coordinateConflict||!job.sites.some(site=>site.lat>=filter.bounds.south&&site.lat<=filter.bounds.north&&site.lng>=filter.bounds.west&&site.lng<=filter.bounds.east)))return false;
     return true;
   });
   if(filter.sort==='deadline')result.sort((a,b)=>(Date.parse(a.expiresAt)||Infinity)-(Date.parse(b.expiresAt)||Infinity));

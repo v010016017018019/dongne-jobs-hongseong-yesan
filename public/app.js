@@ -19,7 +19,7 @@ function cancelPicking(){pickPoint=false;pickReference=false;$('#reference-butto
 const api=webApi;
 function toast(message){clearTimeout(toastTimer);$('#toast').textContent=message;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,4500);}
 function time(value){return value?new Intl.DateTimeFormat('ko-KR',{dateStyle:'short',timeStyle:'short',timeZone:'Asia/Seoul'}).format(new Date(value)):'확인 전';}
-function results(withBounds=true,extra={}){let jobs=filterJobs(state.data?.jobs||[],{...state,...extra,visibleOnly:withBounds&&state.visibleOnly},saved,state.data?.personal);if(state.placeKey)jobs=jobs.filter(job=>job.sites.some(site=>exactAddressKey(site.address)===state.placeKey));return jobs;}
+function results(withBounds=true,extra={}){let jobs=filterJobs(state.data?.jobs||[],{...state,...extra,visibleOnly:withBounds&&state.visibleOnly},saved,state.data?.personal);if(state.placeKey)jobs=jobs.filter(job=>!job.coordinateConflict&&job.sites.some(site=>exactAddressKey(site.address)===state.placeKey));return jobs;}
 function getJob(id){const groups=groupJobs(state.data?.jobs||[],state.groupDuplicates);return groups.find(job=>job.id===id)||groups.find(job=>job.canonicalId===id||job.members.some(member=>member.id===id))||state.history?.archived.find(job=>job.id===id||job.members.some(member=>member.id===id));}
 function due(job){if(!job.expiresAt)return{text:job.deadlineLabel||'원문 확인',soon:false};const days=civilDaysUntil(job.expiresAt);return{text:days===0?'오늘 마감':days<0?'마감':`D-${days}`,soon:days>=0&&days<=7};}
 function updateBounds(){if(!map)return;const bounds=map.getBounds();state.bounds={south:bounds.getSouth(),north:bounds.getNorth(),west:bounds.getWest(),east:bounds.getEast()};}
@@ -39,9 +39,9 @@ function initMap(config){
 function showPoint(lat,lng){if(!map)return;if(pointMarker)pointMarker.remove();pointMarker=L.circleMarker([lat,lng],{radius:10,color:'#17634e',fillColor:'#fff',fillOpacity:1,weight:3}).addTo(map);}
 function renderMarkers(jobs){
   if(!map)return;
-  const signature=JSON.stringify(jobs.map(job=>[job.id,job.company,job.title,job.members?.length,job.sites.map(site=>[site.lat,site.lng,site.address])]));if(signature===lastMarkers)return;lastMarkers=signature;
+  const signature=JSON.stringify(jobs.map(job=>[job.id,job.company,job.title,job.members?.length,job.coordinateConflict,job.sites.map(site=>[site.lat,site.lng,site.address])]));if(signature===lastMarkers)return;lastMarkers=signature;
   markerLayer.clearLayers();jobMarkers.clear();const groups=new Map();
-  for(const job of jobs)for(const site of job.sites){const key=exactAddressKey(site.address)||`${site.lat.toFixed(5)},${site.lng.toFixed(5)}`;if(!groups.has(key))groups.set(key,{site,items:[]});const items=groups.get(key).items;if(!items.some(item=>item.job.id===job.id))items.push({job,site});}
+  for(const job of jobs)if(!job.coordinateConflict)for(const site of job.sites){const key=exactAddressKey(site.address)||`${site.lat.toFixed(5)},${site.lng.toFixed(5)}`;if(!groups.has(key))groups.set(key,{site,items:[]});const items=groups.get(key).items;if(!items.some(item=>item.job.id===job.id))items.push({job,site});}
   const markers=[];
   for(const [key,{site,items}]of groups){
     const icon=L.divIcon({className:'job-marker',html:`<div class="marker-pin ${site.address.includes('예산군')?'yesan':''}"><span>${items.length}</span></div>`,iconSize:[36,36],iconAnchor:[18,35],popupAnchor:[0,-32]});
@@ -52,20 +52,20 @@ function renderMarkers(jobs){
   markerLayer.addLayers(markers);$('#map-caption').textContent=`${state.region==='all'?'홍성 · 예산':state.region} · 근무지 ${groups.size}곳`;
 }
 function renderList(jobs){
-  $('#result-count').textContent=jobs.length.toLocaleString('ko');const located=jobs.filter(job=>job.sites.length).length;
+  $('#result-count').textContent=jobs.length.toLocaleString('ko');const located=jobs.filter(job=>!job.coordinateConflict&&job.sites.length).length;
   $('#list-subtitle').textContent=`지도 ${located}개 · 위치 확인 필요 ${jobs.length-located}개`;
   const list=$('#job-list'),scrollTop=list.scrollTop;
   if(!jobs.length){list.innerHTML='<div class="list-empty"><span class="empty-symbol">⌕</span><b>조건에 맞는 공고가 없어요</b>검색어·지도 범위·거리 조건을 바꾸거나<br>필터 초기화를 눌러보세요.</div>';return;}
   list.innerHTML=jobs.slice(0,state.shown).map(job=>{
     const deadline=due(job),distance=distanceFrom(job,state.reference),isSaved=saved.has(favoriteKey(job)),members=job.members||[job];
     const origin=members[0];const sources=[...new Set(members.map(member=>names[member.portal]))];
-    const locationLabel=job.sites.length?job.sites.some(site=>site.verification==='address-match')?'⌖ 주소 대조 위치':'⌖ 위치 보기':job.locationStatus==='outside'?'⌖ 지역 밖 근무지':'⌖ 위치 확인 필요';
+    const locationLabel=job.coordinateConflict?'⌖ 위치 확인 필요':job.sites.length?job.sites.some(site=>site.verification==='address-match')?'⌖ 주소 대조 위치':'⌖ 위치 보기':job.locationStatus==='outside'?'⌖ 지역 밖 근무지':'⌖ 위치 확인 필요';
     return `<article class="job-card ${state.data.personal?.reads?.[favoriteKey(job)]?'read-card':''} ${state.selected===job.id?'selected':''}" data-card-id="${esc(job.id)}"><div class="company-row"><span>${esc(job.company)}</span><button class="favorite-button ${isSaved?'saved':''}" data-action="save" data-id="${esc(job.id)}" aria-label="${esc(job.company)} 관심공고 ${isSaved?'해제':'저장'}" aria-pressed="${isSaved}">${isSaved?'♥':'♡'}</button></div><button class="job-title title-button" data-action="select" data-id="${esc(job.id)}">${esc(job.title)}</button><div class="job-tags">${personalTags(job)}${job.isNew?'<span class="tag new-tag">신규</span>':''}${members.length>1?`<span class="tag combined-tag">같은 원문 ${members.length}개</span>${sources.map(source=>`<span class="tag">${source}</span>`).join('')}`:badge(origin)}${job.regions.map(region=>`<span class="tag region ${region==='예산군'?'yesan':''}">${esc(region)}</span>`).join('')}${job.experience?`<span class="tag">${esc(job.experience)}</span>`:''}</div>${salaryLine(job)}${educationLine(job)}<div class="job-bottom"><button class="location-button" data-action="select" data-id="${esc(job.id)}">${locationLabel}</button><a class="card-original" data-read-id="${esc(job.id)}" href="${esc(job.url)}" target="_blank" rel="noopener noreferrer">원문 ↗</a><span>${Number.isFinite(distance)?`직선 ${distance.toFixed(1)}km · `:''}<span class="deadline ${deadline.soon?'soon':''}">${esc(deadline.text)}</span></span></div></article>`;
   }).join('')+(jobs.length>state.shown?`<button class="load-more" data-action="more">공고 60개 더 보기 <small>현재 ${Math.min(state.shown,jobs.length)} / ${jobs.length}개</small></button>`:`<div class="list-end">${jobs.length}개 공고를 모두 표시했습니다.</div>`);list.scrollTop=scrollTop;
 }
 function renderStatus(){
   if(!state.data)return;const {jobs,providers,status,fetchedAt,automatic}=state.data,groups=groupJobs(jobs,true);
-  $('#total-stat').textContent=groups.length.toLocaleString('ko');$('#located-stat').textContent=groups.filter(job=>job.sites.length).length.toLocaleString('ko');$('#raw-total-stat').textContent=jobs.length.toLocaleString('ko');$('#portal-all-count').textContent=groups.length;
+  $('#total-stat').textContent=groups.length.toLocaleString('ko');$('#located-stat').textContent=groups.filter(job=>!job.coordinateConflict&&job.sites.length).length.toLocaleString('ko');$('#raw-total-stat').textContent=jobs.length.toLocaleString('ko');$('#portal-all-count').textContent=groups.length;
   $('#refresh-button').disabled=status.running;$('#reverify-button').disabled=status.running;$('#refresh-button').textContent='↻ 최신 목록 확인';
   for(const provider of providers||[]){const progress=status.progress?.[provider.id];$('#portal-'+provider.id+'-count').textContent=provider.count;$('#portal-'+provider.id+'-status').textContent=progress?.running?`${progress.phase}${progress.total?` ${progress.completed}/${progress.total}`:''}`:provider.pausedForAccess?'접속 확인 필요 · 기존 자료':provider.error?'재확인 필요':provider.fetchedAt?`지도 ${provider.located}개${provider.truncated?.length?' · 일부 조회':''}`:'아직 조회 전';}
   $('#notice').className=`notice ${status.running?'busy':status.error?'error':''}`;
@@ -170,7 +170,7 @@ $('#manage-stage').addEventListener('change',renderManagement);
 $('#history-button').addEventListener('click',async()=>{try{await loadHistory();state.historyShown=100;renderHistory();$('#history-dialog').showModal();}catch(error){toast(error.message);}});
 $('#history-kind').addEventListener('change',()=>{state.historyShown=100;renderHistory();});$('#history-query').addEventListener('input',()=>{state.historyShown=100;renderHistory();});
 document.addEventListener('click',event=>{const manage=event.target.closest('[data-manage-view]'),history=event.target.closest('[data-history-view]');if(manage){$('#manage-dialog').close();selectJob(manage.dataset.manageView);}if(history){$('#history-dialog').close();selectJob(history.dataset.historyView);}});
-document.addEventListener('submit',async event=>{if(!event.target.matches('.application-form'))return;event.preventDefault();const form=event.target,button=form.querySelector('[type=submit]');button.disabled=true;const values=Object.fromEntries(new FormData(form));const ok=await persistPersonal({action:'application',id:form.dataset.jobId,sourceId:form.dataset.sourceId,sourceUpdatedAt:form.dataset.sourceUpdatedAt,sourceVersion:form.dataset.sourceVersion,...values},false);button.disabled=false;if(ok){if(form.closest('#detail')){state.editing=false;renderDetail();}renderList(results());renderStatus();toast('지원 상태와 메모를 저장했습니다.');}});
+document.addEventListener('submit',async event=>{if(!event.target.matches('.application-form'))return;event.preventDefault();const form=event.target,button=form.querySelector('[type=submit]');button.disabled=true;const values=Object.fromEntries(new FormData(form));const ok=await persistPersonal({action:'application',id:form.dataset.jobId,sourceId:form.dataset.sourceId,sourceUpdatedAt:form.dataset.sourceUpdatedAt,sourceVersion:form.dataset.sourceVersion,...values},false);button.disabled=false;if(ok){if(form.closest('#detail')){state.editing=false;renderDetail();}if(form.closest('#manage-dialog'))renderManagement();renderList(results());renderStatus();toast('지원 상태와 메모를 저장했습니다.');}});
 
 function syncEducationControls(){
   const selected=state.education;

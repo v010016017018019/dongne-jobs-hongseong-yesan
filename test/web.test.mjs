@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createBrowserApi,STORAGE_KEY,manualJob} from '../public/browser-store.js';
 import {publicJob,publicSnapshot} from '../lib/publication.mjs';
-import {groupJobs} from '../public/model.js';
+import {groupJobs,distanceFrom,filterJobs} from '../public/model.js';
 import {locationReason} from '../public/features.js';
 const at=Date.parse('2026-10-22T03:00:00Z');
 const base=(id='saramin:999123456',extra={})=>({id,canonicalId:id,portal:'saramin',url:'https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=999123456',company:'공개 회사',title:'고졸 생산직',education:'고졸↑',regions:['홍성군'],sites:[],expiresAt:null,firstSeenAt:'2026-10-22T02:00:00Z',...extra});
@@ -85,7 +85,12 @@ test('직접 등록한 원문이 공개 목록에 포함되어도 관심과 위�
 test('서로 다른 위치의 원문이 합쳐지면 위치를 섞지 않고 충돌로 표시한다',async()=>{
   const f=fixture(),api=f.make(),a=base('saramin:11'),b=base('saramin:22'),next='work24:VALIDATION:KTEST';f.setJobs([a,b]);await api('/api/jobs');
   await api('/api/location',{id:a.id,address:'충남 홍성군 홍성읍 대학1길 19',lat:36.58,lng:126.66});await api('/api/location',{id:b.id,address:'충남 홍성군 홍성읍 대학1길 21',lat:36.59,lng:126.67});
-  f.setJobs([{...a,canonicalId:next},{...b,canonicalId:next}]);const data=await api('/api/refresh',{});assert.equal(data.jobs[0].sites[0].address,'충남 홍성군 홍성읍 대학1길 19');assert.equal(data.jobs[1].sites[0].address,'충남 홍성군 홍성읍 대학1길 21');assert.ok(data.jobs.every(job=>job.coordinateConflict));assert.equal(locationReason(groupJobs(data.jobs)[0]),'conflict');
+  f.setJobs([{...a,canonicalId:next},{...b,canonicalId:next}]);const data=await api('/api/refresh',{});assert.equal(data.jobs[0].sites[0].address,'충남 홍성군 홍성읍 대학1길 19');assert.equal(data.jobs[1].sites[0].address,'충남 홍성군 홍성읍 대학1길 21');assert.ok(data.jobs.every(job=>job.coordinateConflict));
+  const group=groupJobs(data.jobs)[0],filter={portal:'all',region:'all',experience:'all'};
+  assert.equal(locationReason(group),'conflict');assert.equal(distanceFrom(group,{lat:36.58,lng:126.66}),Infinity);
+  assert.equal(filterJobs(data.jobs,{...filter,locatedOnly:true}).length,0);
+  assert.equal(filterJobs(data.jobs,{...filter,visibleOnly:true,bounds:{south:36,north:37,west:126,east:127}}).length,0);
+  assert.equal(filterJobs(data.jobs,{...filter,reference:{lat:36.58,lng:126.66},radius:5}).length,0);
 });
 test('분리된 원문 하나가 마감돼도 이전 관심·메모를 관리할 수 있다',async()=>{
   const f=fixture(),api=f.make(),a=base('saramin:11',{canonicalId:'old'}),b=base('saramin:22',{canonicalId:'old'});f.setJobs([a,b]);await api('/api/jobs');
