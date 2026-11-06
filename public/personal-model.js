@@ -5,7 +5,7 @@ export function canonicalizePersonal(personal,rows){
   const canonical=id=>{const seen=new Set();while(aliases.has(id)&&aliases.get(id)!==id&&!seen.has(id)){seen.add(id);id=aliases.get(id);}return id;};
   const next=structuredClone(personal);next.savedIds=[...new Set(personal.savedIds.map(canonical))];next.reads={};next.applications={};
   for(const [id,at]of Object.entries(personal.reads)){const key=canonical(id);if(!next.reads[key]||Date.parse(at)>Date.parse(next.reads[key]))next.reads[key]=at;}
-  for(const [id,entry]of Object.entries(personal.applications)){const key=canonical(id),old=next.applications[key];if(!old){next.applications[key]=entry;continue;}const [latest,previous]=Date.parse(entry.updatedAt)>Date.parse(old.updatedAt)?[entry,old]:[old,entry];const previousNotes=[...(latest.previousNotes||[]),...(previous.previousNotes||[])];if(previous.note&&previous.note!==latest.note)previousNotes.push({note:previous.note,stage:previous.stage,updatedAt:previous.updatedAt});next.applications[key]={...latest,previousNotes};}
+  for(const [id,entry]of Object.entries(personal.applications)){const key=canonical(id),old=next.applications[key];if(!old){next.applications[key]=entry;continue;}const [latest,previous]=Date.parse(entry.updatedAt)>Date.parse(old.updatedAt)?[entry,old]:[old,entry];const previousNotes=[...(latest.previousNotes||[]),...(previous.previousNotes||[])];if(previous.note&&previous.note!==latest.note||previous.stage&&previous.stage!==latest.stage)previousNotes.push({note:previous.note,stage:previous.stage,updatedAt:previous.updatedAt});next.applications[key]={...latest,previousNotes};}
   if(JSON.stringify(next)!==JSON.stringify(personal))next.revision=(personal.revision||0)+1;
   return next;
 }
@@ -36,7 +36,7 @@ export function updatePersonal(personal,input,job,at=new Date().toISOString()){
   if(input.action==='application'){
     if(!Object.hasOwn(stages,input.stage))throw new Error('지원 상태를 확인해 주세요.');
     const note=String(input.note||'');if(note.length>4000)throw new Error('메모는 4,000자까지 입력할 수 있습니다.');
-    if(!input.stage&&!note.trim())delete next.applications[key];else next.applications[key]={...next.applications[key],stage:input.stage,note,updatedAt:at};return next;
+    if(!input.stage&&!note.trim()&&!next.applications[key]?.previousNotes?.length)delete next.applications[key];else next.applications[key]={...next.applications[key],stage:input.stage,note,updatedAt:at,editVersion:crypto.randomUUID()};return next;
   }
   throw new Error('지원하지 않는 저장 요청입니다.');
 }
