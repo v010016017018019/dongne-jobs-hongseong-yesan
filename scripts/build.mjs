@@ -10,9 +10,9 @@ const snapshot=publicSnapshot({store:await read('jobs-v7.json'),details:await re
 if(relative(root,dist)!=='dist')throw new Error('Invalid output directory');
 await rm(dist,{recursive:true,force:true});await mkdir(resolve(dist,'data'),{recursive:true});
 await cp(resolve(root,'public'),dist,{recursive:true});await mkdir(resolve(dist,'vendor'),{recursive:true});
-for(const [source,name]of [['leaflet/dist/leaflet.js','leaflet.js'],['leaflet/dist/leaflet.css','leaflet.css'],['leaflet.markercluster/dist/leaflet.markercluster.js','markercluster.js'],['leaflet.markercluster/dist/MarkerCluster.css','MarkerCluster.css']])await cp(resolve(root,'node_modules',source),resolve(dist,'vendor',name));
-for(const packageName of ['leaflet','leaflet.markercluster']){
-  const license=await readFile(resolve(root,'node_modules',packageName,'LICENSE'),'utf8').catch(()=>null);if(license)await writeFile(resolve(dist,'vendor',packageName+'-LICENSE.txt'),license);
+for(const [source,name]of [['leaflet/dist/leaflet.js','leaflet.js'],['leaflet/dist/leaflet.css','leaflet.css'],['leaflet.markercluster/dist/leaflet.markercluster.js','markercluster.js'],['leaflet.markercluster/dist/MarkerCluster.css','MarkerCluster.css'],['@vercel/analytics/dist/index.mjs','analytics.mjs']])await cp(resolve(root,'node_modules',source),resolve(dist,'vendor',name));
+for(const packageName of ['leaflet','leaflet.markercluster','@vercel/analytics']){
+  const license=await readFile(resolve(root,'node_modules',packageName,'LICENSE'),'utf8').catch(()=>null);if(license)await writeFile(resolve(dist,'vendor',packageName.replace('/','-')+'-LICENSE.txt'),license);
 }
 const jobs=JSON.stringify(snapshot.jobs),history=JSON.stringify(snapshot.history),hash=value=>createHash('sha256').update(value).digest('hex').slice(0,16),jobFile=`jobs-${hash(jobs)}.json`,historyFile=`history-${hash(history)}.json`;
 await writeFile(resolve(dist,'data',jobFile),jobs);await writeFile(resolve(dist,'data',historyFile),history);
