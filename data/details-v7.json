@@ -41337,7 +41337,7 @@
     "employment": "정규직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-08T22:28:53.447Z"
+    "checkedAt": "2026-11-10T19:53:15.576Z"
   },
   "saramin:55381763": {
     "sites": [],
@@ -41604,7 +41604,7 @@
     "employment": "정규직",
     "education": "대졸(2,3년)이상",
     "conditions": [],
-    "checkedAt": "2026-11-08T22:28:52.267Z"
+    "checkedAt": "2026-11-10T19:53:16.719Z"
   },
   "saramin:55385922": {
     "sites": [],
@@ -60700,7 +60700,24 @@
     "checkedAt": "2026-11-10T07:32:17.425Z"
   },
   "saramin:55532410": {
-    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+    "sites": [
+      {
+        "address": "(32214) 충남 홍성군 구항면 충서로966번길 41-41",
+        "lat": 36.5653513464473,
+        "lng": 126.651413502948,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-11-10T19:52:59.646Z"
+      }
+    ],
+    "address": "(32214) 충남 홍성군 구항면 충서로966번길 41-41",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 300 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 2,156,880원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:52:59.658Z"
   },
   "jobkorea:50340729": {
     "sites": [],
@@ -61062,5 +61079,383 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611100022&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-10T07:42:47.677Z"
+  },
+  "work24:VALIDATION:KJNP002611100001": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍북읍 신대로 86, 관리동 (내포신도시 반도유보라 마크에디션)",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급 174만원 ~ 174만원 이하",
+    "employment": "기간의 정함이 있는 근로계약(시간(선택)제) · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:52:49.817Z"
+  },
+  "saramin:55539106": {
+    "sites": [],
+    "address": "충청남도 홍성군 조양로 224",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 6,000 만원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:00.902Z"
+  },
+  "saramin:55539105": {
+    "sites": [],
+    "address": "충청남도 홍성군 광천읍 광천로 147-52",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:02.072Z"
+  },
+  "saramin:55539111": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍성읍 의사로 9",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 2,169만원 이상 (면접 후 협의)",
+    "employment": "계약직1년",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:02.802Z"
+  },
+  "saramin:55539112": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍성읍 의사로 9",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 2,880 만원",
+    "employment": "계약직1년",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:04.539Z"
+  },
+  "saramin:55538431": {
+    "sites": [],
+    "address": "충청남도 홍성군 충서로335번길 28 가람빌라",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "프리랜서",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:05.325Z"
+  },
+  "saramin:55539137": {
+    "sites": [],
+    "address": "충청남도 홍성군 충서로 2249-19 (인근전철: 서울 1호선 병점에서 500m 이내)",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "프리랜서",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:06.646Z"
+  },
+  "saramin:55538335": {
+    "sites": [],
+    "address": "충청남도 홍성군 내포로251번길 199 (옥암리742-2)",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:08.314Z"
+  },
+  "saramin:55539058": {
+    "sites": [],
+    "address": "충청남도 예산군 신양면 당진영덕고속도로 34",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,480 만원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:09.646Z"
+  },
+  "saramin:55539060": {
+    "sites": [],
+    "address": "충청남도 예산군 고덕면 예당산단2길 14-16",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 11,000 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:10.591Z"
+  },
+  "saramin:55539053": {
+    "sites": [],
+    "address": "충청남도 예산군 오가면 원천길 27-7",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "계약직3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:11.673Z"
+  },
+  "saramin:55539042": {
+    "sites": [],
+    "address": "충청남도 예산군 삽교읍 두루머리길 16-26 (주)경진테크",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,600 만원",
+    "employment": "정규직",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:13.416Z"
+  },
+  "saramin:55539046": {
+    "sites": [],
+    "address": "충청남도 예산군 고덕면 사리용리길 250-8 에스케이이전선(주)",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,200 만원",
+    "employment": "정규직",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:14.320Z"
+  },
+  "jobkorea:50341279": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[근무차량가능] CJ대한통운 택배기사 가벼운물량 희망구역배정",
+    "company": "굿앤피플컴퍼니",
+    "expiresAt": "2027-01-09T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 6,000~7,000만원",
+    "employment": "FULL_TIME · CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:31.100Z"
+  },
+  "jobkorea:50277083": {
+    "sites": [],
+    "address": "충남 서산시 한마음5로 53 (석림동) 주식회사 충남유통",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "배송/영업배송 업무 담당자 모십니다.",
+    "company": "㈜충남유통",
+    "expiresAt": "2026-11-30T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 3,600~3,600만원(면접 후 결정)",
+    "employment": "FULL_TIME",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:34.878Z"
+  },
+  "jobkorea:50277089": {
+    "sites": [],
+    "address": "충남 서산시 한마음5로 53 (석림동) 주식회사 충남유통",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "매장 제품 관리자 모십니다",
+    "company": "㈜충남유통",
+    "expiresAt": "2026-11-30T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 3,600~3,600만원(면접 후 결정)",
+    "employment": "FULL_TIME",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:38.185Z"
+  },
+  "jobkorea:50195624": {
+    "sites": [],
+    "address": "충남 서산시 한마음5로 53 (석림동) 주식회사 충남유통",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "MD분야/ 식자재 상품 관리자",
+    "company": "㈜충남유통",
+    "expiresAt": "2026-11-18T14:59:59.000Z",
+    "experience": "경력",
+    "factsVersion": 5,
+    "salary": "연봉 4,500만원 이상(면접 후 결정)",
+    "employment": "FULL_TIME",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:41.697Z"
+  },
+  "jobkorea:WN:5729916": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍성읍 의사로 9",
+        "lat": 36.598684511676396,
+        "lng": 126.670012405082,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-10T07:32:11.336Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍성읍 의사로 9",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 240만원 이상",
+    "employment": "기간의 정함이 있는 근로계약 · 12개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:44.959Z",
+    "originId": "work24:VALIDATION:K172222611100019",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611100019&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-10T19:53:44.959Z"
+  },
+  "jobkorea:WN:5729915": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍성읍 의사로 9",
+        "lat": 36.598684511676396,
+        "lng": 126.670012405082,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-10T07:32:12.439Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍성읍 의사로 9",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 180만원 이상",
+    "employment": "기간의 정함이 있는 근로계약 · 12개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:48.428Z",
+    "originId": "work24:VALIDATION:K172222611100018",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611100018&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-10T19:53:48.428Z"
+  },
+  "jobkorea:WN:5729595": {
+    "sites": [],
+    "address": "충청남도 홍성군 홍북읍 신대로 86, 관리동 (내포신도시 반도유보라 마크에디션)",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급 174만원 ~ 174만원 이하",
+    "employment": "기간의 정함이 있는 근로계약(시간(선택)제) · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:51.905Z",
+    "originId": "work24:VALIDATION:KJNP002611100001",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KJNP002611100001&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-10T19:53:51.905Z"
+  },
+  "jobkorea:50329751": {
+    "sites": [],
+    "address": "충남 천안시 동남구 수신면 장산동길 32 (장산리) 아이엘사이언스",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[평일 5일/셔틀버스/주차가능] 자동차 부품 생산직 파트별 대규모 채용",
+    "company": "에이스휴먼파워㈜",
+    "expiresAt": "2027-01-10T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "월급 240~500만원",
+    "employment": "FULL_TIME · CONTRACTOR · PART_TIME",
+    "education": "고졸 이상",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "셔틀버스",
+        "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50329751"
+      }
+    ],
+    "checkedAt": "2026-11-10T19:53:55.563Z"
+  },
+  "jobkorea:50343271": {
+    "sites": [],
+    "address": "충남 천안시 동남구 청수9로 47 (청당동) 엠피스비즈니스센터 5층 AIA프리미어파트너스 Aone본부",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[천안시-직전연봉 60프로/리쿨비 900만] 지점장,사업단장,본부장 채용",
+    "company": "에이아이프리미어파트너스㈜",
+    "expiresAt": "2026-12-10T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "회사 내규에 따름",
+    "employment": "CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:53:59.388Z"
+  },
+  "jobkorea:50343114": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "300~420만원",
+    "employment": "· 정규직",
+    "conditions": [
+      {
+        "id": "shift",
+        "label": "교대 근무",
+        "evidence": "2교대]화장품 포장",
+        "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50343114"
+      },
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "통근버스",
+        "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50343114"
+      }
+    ],
+    "checkedAt": "2026-11-10T19:54:03.493Z"
+  },
+  "jobkorea:50343121": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "250~270만원",
+    "employment": "· 계약직",
+    "conditions": [],
+    "checkedAt": "2026-11-10T19:54:06.375Z"
+  },
+  "jobkorea:ALBAMON:120238912": {
+    "sites": [],
+    "address": "충남 아산시 선장면 선창리 333-1",
+    "expiresAt": "2026-11-30T15:00:00.000Z",
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급3,700,000원주급가능급여 10일/ 잔업특근에 따라 급여 상이함/ 정규직 상여300% /2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직, 계약직",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "통근버스 운행",
+        "url": "https://www.albamon.com/jobs/detail/120238912"
+      }
+    ],
+    "checkedAt": "2026-11-10T19:54:10.026Z"
   }
 }
