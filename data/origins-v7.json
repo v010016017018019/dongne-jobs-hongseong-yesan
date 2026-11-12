@@ -2837,7 +2837,7 @@
   "jobkorea:WN:5717106": {
     "originId": "work24:VALIDATION:K172222611030020",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611030020&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-10T07:36:18.999Z"
+    "sourceCheckedAt": "2026-11-12T03:18:42.851Z"
   },
   "jobkorea:WN:5715045": {
     "originId": "work24:VALIDATION:K172112611030025",
@@ -3237,17 +3237,17 @@
   "jobkorea:WN:5729916": {
     "originId": "work24:VALIDATION:K172222611100019",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611100019&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-10T19:53:44.959Z"
+    "sourceCheckedAt": "2026-11-12T03:18:36.018Z"
   },
   "jobkorea:WN:5729915": {
     "originId": "work24:VALIDATION:K172222611100018",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611100018&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-10T19:53:48.428Z"
+    "sourceCheckedAt": "2026-11-12T03:18:39.312Z"
   },
   "jobkorea:WN:5729595": {
     "originId": "work24:VALIDATION:KJNP002611100001",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KJNP002611100001&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-10T19:53:51.905Z"
+    "sourceCheckedAt": "2026-11-12T03:18:33.079Z"
   },
   "work24:CSI:55540444": {
     "originId": "saramin:55540444",
@@ -3298,5 +3298,10 @@
     "originId": "work24:VALIDATION:K172112611110048",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611110048&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "sourceCheckedAt": "2026-11-11T19:54:48.287Z"
+  },
+  "jobkorea:WN:5733032": {
+    "originId": "work24:VALIDATION:K172112611120007",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611120007&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-12T03:19:25.550Z"
   }
 }
