@@ -3348,5 +3348,15 @@
     "originId": "work24:VALIDATION:K180012611130022",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K180012611130022&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "sourceCheckedAt": "2026-11-13T05:40:59.784Z"
+  },
+  "jobkorea:WN:5735575": {
+    "originId": "work24:VALIDATION:K172112611130042",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611130042&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-13T06:59:11.063Z"
+  },
+  "jobkorea:WN:5735656": {
+    "originId": "work24:VALIDATION:K172112611130043",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611130043&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-13T06:59:14.493Z"
   }
 }

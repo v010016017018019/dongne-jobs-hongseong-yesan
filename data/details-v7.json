@@ -64402,5 +64402,185 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K180012611130022&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-13T05:40:59.784Z"
+  },
+  "work24:VALIDATION:KF11522611130001": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍성읍 충서로1318번길 37-13, 외 1곳(홍성고용복지센터 파견)",
+        "lat": 36.62185817702252,
+        "lng": 126.626575857536,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-13T06:58:22.473Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍성읍 충서로1318번길 37-13, 외 1곳(홍성고용복지센터 파견)",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 223만원 ~ 223만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 12개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:22.523Z"
+  },
+  "work24:VALIDATION:KJNP002611130001": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍성읍 아문길 27",
+        "lat": 36.62185817702252,
+        "lng": 126.626575857536,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-13T06:58:23.734Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍성읍 아문길 27",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "일급 85,600원 ~ 85,600원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 12개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:23.785Z"
+  },
+  "work24:VALIDATION:K172112611130050": {
+    "sites": [],
+    "address": "충청남도 예산군 고덕면 예당산단4길 19, 대달산업(주)",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 5,000만원 이상",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "대졸(2~3년)~석사",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:24.955Z"
+  },
+  "work24:VALIDATION:K172112611130045": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 고덕면 예당산단7길 45",
+        "lat": 36.762468067051415,
+        "lng": 126.727968466113,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-13T06:58:26.115Z"
+      }
+    ],
+    "address": "충청남도 예산군 고덕면 예당산단7길 45",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "시급 10,320원 ~ 10,320원 이하",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "중졸~고졸",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:26.160Z"
+  },
+  "work24:VALIDATION:K172112611130043": {
+    "sites": [],
+    "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000만원 ~ 3,500만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:27.410Z"
+  },
+  "work24:VALIDATION:K172112611130042": {
+    "sites": [],
+    "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000만원 ~ 3,500만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "고졸~대졸(4년)",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:28.618Z"
+  },
+  "saramin:55567355": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:58:31.938Z"
+  },
+  "jobkorea:50362369": {
+    "sites": [],
+    "address": "서울 송파구 방이동 65-2, 5층",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[근무차량가능] CJ대한통운 택배기사 가벼운물량 초보자환영",
+    "company": "굿앤피플컴퍼니",
+    "expiresAt": "2027-01-12T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 6,000~7,000만원",
+    "employment": "FULL_TIME · CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:59:04.230Z"
+  },
+  "jobkorea:50362879": {
+    "sites": [
+      {
+        "address": "충남 예산군 삽교읍 청사로192번길 20 (목리) 212호",
+        "lat": 36.66162,
+        "lng": 126.6802,
+        "source": "잡코리아 근무지",
+        "confirmedAt": "2026-11-13T06:59:07.681Z"
+      }
+    ],
+    "address": "충남 예산군 삽교읍 청사로192번길 20 (목리) 212호",
+    "closed": false,
+    "locationNote": "",
+    "title": "해썹 디저트공장 직원모집",
+    "company": "모디베이크",
+    "expiresAt": "2026-12-13T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "월급 240만원 이상(면접 후 결정)",
+    "employment": "FULL_TIME",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:59:07.690Z"
+  },
+  "jobkorea:WN:5735575": {
+    "sites": [],
+    "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000만원 ~ 3,500만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "고졸~대졸(4년)",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:59:11.063Z",
+    "originId": "work24:VALIDATION:K172112611130042",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611130042&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-13T06:59:11.063Z"
+  },
+  "jobkorea:WN:5735656": {
+    "sites": [],
+    "address": "충청남도 예산군 응봉면 충서로 25-24, 한동레미콘",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무예정지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000만원 ~ 3,500만원 이하",
+    "employment": "기간의 정함이 있는 근로계약 · 3개월 (계약기간 만료 후 상용직 전환 검토)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T06:59:14.493Z",
+    "originId": "work24:VALIDATION:K172112611130043",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611130043&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-13T06:59:14.493Z"
   }
 }
