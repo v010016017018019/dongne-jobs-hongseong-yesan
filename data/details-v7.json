@@ -42995,7 +42995,7 @@
     "employment": "정규직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-11T19:57:38.920Z"
+    "checkedAt": "2026-11-13T01:17:37.196Z"
   },
   "jobkorea:50239860": {
     "sites": [],
@@ -63874,5 +63874,127 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-11-12T20:22:19.085Z"
+  },
+  "work24:VALIDATION:K180012611130022": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 용리2길 11-14, 1층",
+        "lat": 36.723604312354,
+        "lng": 126.72128874601802,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-13T01:17:25.226Z"
+      }
+    ],
+    "address": "충청남도 예산군 용리2길 11-14, 1층",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "시급 10,320원 ~ 10,320원 이하",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T01:17:25.303Z"
+  },
+  "saramin:55563355": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "dorm",
+        "label": "기숙사 안내",
+        "evidence": "기숙사 지원]프리미엄 레저시설 조리팀 채용",
+        "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55563355"
+      }
+    ],
+    "checkedAt": "2026-11-13T01:17:32.961Z"
+  },
+  "saramin:55563125": {
+    "sites": [
+      {
+        "address": "(32441) 충남 예산군 마상길 9",
+        "lat": 36.6780097034951,
+        "lng": 126.83433265638,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-11-13T01:17:34.663Z"
+      }
+    ],
+    "address": "(32441) 충남 예산군 마상길 9",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T01:17:34.680Z"
+  },
+  "saramin:55563105": {
+    "sites": [
+      {
+        "address": "(32417) 충남 예산군 신암면 추사로 235-22(주)유니바이오테크",
+        "lat": 36.7480523532692,
+        "lng": 126.821504029717,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-11-13T01:17:36.228Z"
+      }
+    ],
+    "address": "(32417) 충남 예산군 신암면 추사로 235-22(주)유니바이오테크",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-13T01:17:36.245Z"
+  },
+  "jobkorea:50359130": {
+    "sites": [],
+    "address": "충청남도 천안시 서북구 직산읍 4산단3로 113 에이동",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[삼성1차협력반도체,상여500수준 급여, 교대및주말근무가능자, 통근버스운영]",
+    "company": "㈜유앤코어",
+    "expiresAt": "2026-12-13T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 4,000~6,000만원",
+    "employment": "FULL_TIME · CONTRACTOR",
+    "education": "고졸 이상",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "통근버스운영]",
+        "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50359130"
+      }
+    ],
+    "checkedAt": "2026-11-13T01:18:07.621Z"
+  },
+  "jobkorea:ALBAMON:120277852": {
+    "sites": [],
+    "address": "충남 홍성군 홍성읍 남장리 409-16",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급3,600,000원2026년 최저시급 10,320원급여계산기",
+    "employment": "계약직, 정규직",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "dorm",
+        "label": "기숙사 안내",
+        "evidence": "기숙사 운영",
+        "url": "https://www.albamon.com/jobs/detail/120277852"
+      }
+    ],
+    "checkedAt": "2026-11-13T01:18:11.208Z"
   }
 }
