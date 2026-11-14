@@ -19,12 +19,15 @@ test('잡코리아의 등록일이 오늘이어도 실제 마감일을 사용하
   const data=parseJobkoreaList(`<div class="tplList"><table>${row(123456,'충남 홍성군')}${row(123457,'충남 예산군')}</table></div>`,'홍성군',now);
   assert.equal(data.jobs.length,1);assert.equal(data.pageItems,2);assert.equal(data.jobs[0].expiresAt,'2026-11-13T14:59:59.000Z');assert.equal(data.jobs[0].portal,'jobkorea');
 });
-test('잡코리아 공개 Next 데이터에서 실제 근무지를 추출하고 회사 본사 좌표는 사용하지 않는다',()=>{
+test('잡코리아 공개 Next 데이터에서 실제 근무지를 추출하고 회사 본사 좌표는 사용하지 않는다',t=>{
+  t.mock.timers.enable({apis:['Date'],now});
   const record=['$',null,null,{state:{queries:[{state:{data:{title:'공고',statusType:'POSTING',deleted:false,post:{postingEndAt:'2026-11-13T23:59:59+09:00'},workCondition:{workplace:{locationAttributes:[{fullAddress:'충남 홍성군 홍북읍 애향2길 19',latitude:36.6576,longitude:126.6847}]}},info:{address:{address:'서울 강남구 본사로 12',latitude:37.5,longitude:127}}}}}]}}];
   const embedded=JSON.stringify([1,'16:'+JSON.stringify(record)+'\n']);
   const data=parseJobkoreaDetail(`<script>self.__next_f.push(${embedded})</script>`,['홍성군']);
   assert.equal(data.sites.length,1);assert.equal(data.sites[0].lat,36.6576);assert.equal(data.closed,false);
   assert.equal(parseJobkoreaDetail(`<script>self.__next_f.push(${embedded})</script>`,['예산군']).sites.length,0);
+  t.mock.timers.setTime(Date.parse('2026-11-14T00:00:00+09:00'));
+  assert.equal(parseJobkoreaDetail(`<script>self.__next_f.push(${embedded})</script>`,['홍성군']).closed,true);
 });
 test('고용24 행의 회사·원문 제목·실제 마감일과 채용시 마감 조건을 읽는다',()=>{
   const row=(id,location,wantedYn)=>`<tr><td><input id="chkboxWantedAuthNo0" value="${id}|VALIDATION|테스트 센터|사무원 모집 전체 제목"><a class="cp_name">테스트 센터</a><a href="/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=${id}&amp;infoTypeCd=VALIDATION">사무원...</a></td><td><ul class="emp_info_dtl"><li class="member"><span class="item">경력무관</span><span class="item">학력무관</span></li><li class="site">${location}</li></ul></td><td><script>var date='2026-11-10';var wantedYn='${wantedYn}';</script><p>등록일 : 2026-10-14</p></td></tr>`;
