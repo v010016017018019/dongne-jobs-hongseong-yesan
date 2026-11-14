@@ -22062,12 +22062,11 @@
     "employment": "기간의 정함이 있는 근로계약 · 12개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-12T07:39:10.863Z",
+    "checkedAt": "2026-11-14T22:37:51.505Z",
     "originId": "work24:VALIDATION:K172222610120029",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222610120029&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-11-12T07:39:10.863Z",
-    "verificationError": "잡코리아에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+    "originSourceCheckedAt": "2026-11-14T22:37:51.504Z"
   },
   "jobkorea:WN:5675321": {
     "sites": [
@@ -51928,7 +51927,7 @@
     "employment": "CONTRACTOR",
     "education": "고졸 이상",
     "conditions": [],
-    "checkedAt": "2026-11-12T20:11:32.844Z"
+    "checkedAt": "2026-11-14T22:37:44.189Z"
   },
   "work24:VALIDATION:K171112611030055": {
     "sites": [
@@ -64938,5 +64937,42 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-11-14T18:19:56.516Z"
+  },
+  "jobkorea:50354864": {
+    "sites": [],
+    "address": "충남 서산시 관아문길 1 (읍내동, 서산시청) 한울종합물류(CJ대한통운,롯데,로젠,한진,쿠팡,컬리)/ 거주지인근 5KG이내 소화물배송",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "당진,서산,홍성))기사님모집/평균490/회사차량사용/보증금X/초보가능",
+    "company": "한울종합물류",
+    "expiresAt": "2027-01-14T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "월급 490만원 이상",
+    "employment": "FULL_TIME · CONTRACTOR · CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-14T22:37:40.328Z"
+  },
+  "jobkorea:ALBAMON:120295299": {
+    "sites": [
+      {
+        "address": "충남 홍성군 청사로 42 (신경리, 내포씨에스빌딩) 2층 미래인재학원",
+        "lat": 36.64838409423828,
+        "lng": 126.67501068115234,
+        "source": "잡코리아 제휴 알바몬 근무지",
+        "confirmedAt": "2026-11-14T22:37:47.721Z"
+      }
+    ],
+    "address": "충남 홍성군 청사로 42 (신경리, 내포씨에스빌딩) 2층 미래인재학원",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급2,400,000원협의가능2026년 최저시급 10,320원급여계산기",
+    "employment": "계약직, 정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-14T22:37:47.731Z"
   }
 }
