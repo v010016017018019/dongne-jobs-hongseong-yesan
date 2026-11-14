@@ -2387,7 +2387,7 @@
     "employment": "정규직",
     "education": "고졸 이상",
     "conditions": [],
-    "checkedAt": "2026-11-12T20:24:34.360Z"
+    "checkedAt": "2026-11-14T18:20:00.806Z"
   },
   "saramin:55083452": {
     "sites": [
@@ -26490,7 +26490,7 @@
     "employment": "계약직",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-12T20:15:40.810Z"
+    "checkedAt": "2026-11-14T18:19:53.872Z"
   },
   "saramin:55218993": {
     "sites": [],
@@ -42681,7 +42681,7 @@
     "employment": "계약직5개월",
     "education": "고졸 이상",
     "conditions": [],
-    "checkedAt": "2026-11-13T05:39:30.822Z"
+    "checkedAt": "2026-11-14T18:19:59.363Z"
   },
   "saramin:55398436": {
     "sites": [],
@@ -61030,7 +61030,7 @@
     "employment": "계약직3개월",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-13T05:39:22.461Z"
+    "checkedAt": "2026-11-14T18:19:57.902Z"
   },
   "saramin:55539042": {
     "sites": [],
@@ -64914,5 +64914,29 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611130045&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-14T10:24:24.526Z"
+  },
+  "saramin:55575278": {
+    "sites": [],
+    "address": "충청남도 예산군 응봉면 충서로 25-24 한동레미콘",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "연봉 3,000 만원",
+    "employment": "계약직3개월",
+    "education": "고졸 이상",
+    "conditions": [],
+    "checkedAt": "2026-11-14T18:19:55.238Z"
+  },
+  "saramin:55575292": {
+    "sites": [],
+    "address": "충청남도 예산군 용리2길 11-14 1층",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "시급 10,320 원",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-14T18:19:56.516Z"
   }
 }
