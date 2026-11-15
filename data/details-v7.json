@@ -64974,5 +64974,70 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-11-14T22:37:47.731Z"
+  },
+  "saramin:55576442": {
+    "sites": [],
+    "address": "(32415) 충남 예산군 삽교읍 산단2길 ***",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-15T06:50:47.067Z"
+  },
+  "saramin:55576382": {
+    "sites": [],
+    "address": "",
+    "closed": false,
+    "locationNote": "공개 페이지에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)3개월",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "dorm",
+        "label": "기숙사 안내",
+        "evidence": "기숙사제공]반도체 OP",
+        "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55576382"
+      }
+    ],
+    "checkedAt": "2026-11-15T06:50:49.004Z"
+  },
+  "jobkorea:ALBAMON:120297466": {
+    "sites": [],
+    "address": "충남 홍성군 홍성읍 내법리396-143",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급2,800,000원협의가능수습기간있음수습기간 내 급여 변동 없습니다.2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-15T06:51:19.453Z"
+  },
+  "jobkorea:ALBAMON:120298915": {
+    "sites": [
+      {
+        "address": "충남 예산군 금오대로 33-39 (산성리) 강경불고기 예산점",
+        "lat": 36.694793701171875,
+        "lng": 126.83079528808594,
+        "source": "잡코리아 제휴 알바몬 근무지",
+        "confirmedAt": "2026-11-15T06:51:22.884Z"
+      }
+    ],
+    "address": "충남 예산군 금오대로 33-39 (산성리) 강경불고기 예산점",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급2,956,800원협의가능수습기간있음주휴수당 포함 월 24일근무2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-15T06:51:22.899Z"
   }
 }
