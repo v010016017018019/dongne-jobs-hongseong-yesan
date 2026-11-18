@@ -69821,5 +69821,21 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611180003&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-18T11:27:10.859Z"
+  },
+  "jobkorea:50393795": {
+    "sites": [],
+    "address": "충남 천안시 동남구 청수9로 47 (청당동) 엠피스비즈니스센터 5층 AIA프리미어파트너스 Aone본부",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[천안시-직전연봉 60프로/리쿨비 900만] 지점장,사업단장,본부장 채용",
+    "company": "에이아이프리미어파트너스㈜",
+    "expiresAt": "2026-12-18T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "회사 내규에 따름",
+    "employment": "CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-18T20:45:00.839Z"
   }
 }
