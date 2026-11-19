@@ -70532,7 +70532,28 @@
     "checkedAt": "2026-11-19T07:04:12.492Z"
   },
   "work24:CSI:55618800": {
-    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+    "sites": [
+      {
+        "address": "(32401) 충남 예산군 고덕면 상몽산단2길 12",
+        "lat": 36.7993643958683,
+        "lng": 126.697379522488,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-11-19T07:40:49.357Z"
+      }
+    ],
+    "address": "(32401) 충남 예산군 고덕면 상몽산단2길 12",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "면접 후 결정",
+    "employment": "정규직(수습기간)2개월",
+    "education": "학력무관",
+    "conditions": [],
+    "originId": "saramin:55618800",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55618800",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-19T07:40:42.320Z",
+    "checkedAt": "2026-11-19T07:40:49.375Z"
   },
   "jobkorea:50398294": {
     "sites": [],
@@ -70702,5 +70723,75 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611190035&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-19T07:05:34.319Z"
+  },
+  "work24:VALIDATION:K172222611190032": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 갈산면 산단로388번길 100, (주)벽산공장내",
+        "lat": 36.629757360101,
+        "lng": 126.53430644862601,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-19T07:40:27.803Z"
+      }
+    ],
+    "address": "충청남도 홍성군 갈산면 산단로388번길 100, (주)벽산공장내",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 220만원 ~ 270만원 이하 협의가능",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "shift",
+        "label": "교대 근무",
+        "evidence": "3교대",
+        "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611190032&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet"
+      }
+    ],
+    "checkedAt": "2026-11-19T07:40:27.865Z"
+  },
+  "work24:VALIDATION:K172222611190030": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 갈산면 산단로 177, 주식회사 홍주산업",
+        "lat": 36.60582848553562,
+        "lng": 126.51933967513898,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-19T07:40:29.026Z"
+      }
+    ],
+    "address": "충청남도 홍성군 갈산면 산단로 177, 주식회사 홍주산업",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 215만원 이상",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-19T07:40:29.079Z"
+  },
+  "work24:CSI:55619724": {
+    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+  },
+  "work24:VALIDATION:K172112611190050": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 신암면 신원탄중길 216-48, 탄중리 148-2",
+        "lat": 36.709045308150216,
+        "lng": 126.824365084255,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-19T07:40:41.944Z"
+      }
+    ],
+    "address": "충청남도 예산군 신암면 신원탄중길 216-48, 탄중리 148-2",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 380만원 ~ 380만원 이하",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-19T07:40:41.981Z"
   }
 }
