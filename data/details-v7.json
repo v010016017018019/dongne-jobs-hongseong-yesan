@@ -32032,7 +32032,8 @@
     "originId": "saramin:55330333",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55330333",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-11-18T02:13:13.980Z"
+    "originSourceCheckedAt": "2026-11-18T02:13:13.980Z",
+    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
   },
   "saramin:55323799": {
     "sites": [
@@ -71050,5 +71051,28 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KJAG002611190004&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-19T20:53:28.105Z"
+  },
+  "work24:CSI:55626594": {
+    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+  },
+  "work24:VALIDATION:K172112611200007": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 고덕면 상몽산단2길 51, 이엔지스틸(주)예산공장",
+        "lat": 36.79699845509629,
+        "lng": 126.69976669583,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-20T02:09:57.054Z"
+      }
+    ],
+    "address": "충청남도 예산군 고덕면 상몽산단2길 51, 이엔지스틸(주)예산공장",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "시급 10,700원 이상 협의가능",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-20T02:09:57.132Z"
   }
 }
