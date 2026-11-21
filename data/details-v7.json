@@ -72057,5 +72057,74 @@
     "education": "학력무관",
     "conditions": [],
     "checkedAt": "2026-11-21T11:17:50.037Z"
+  },
+  "jobkorea:50403006": {
+    "sites": [],
+    "address": "충남 홍성군 홍성읍 아문길 27 (오관리) 한울종합물류(CJ대한통운,롯데,로젠,한진,쿠팡,컬리)/ 거주지인근 5KG이내 소화물배송",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[청주,증평]배송기사모집/회사차량사용/평균490/거주지인근/동반,초보가능",
+    "company": "한울종합물류",
+    "expiresAt": "2027-01-21T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "월급 490만원 이상",
+    "employment": "FULL_TIME · CONTRACTOR · CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-21T19:32:15.619Z"
+  },
+  "jobkorea:ALBAMON:120415930": {
+    "sites": [],
+    "address": "충남 예산군 청사로192번길 20 (목리) 2층 212호",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급2,400,000원수습기간있음수습기간 3개월2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-21T19:32:18.792Z"
+  },
+  "jobkorea:ALBAMON:120424753": {
+    "sites": [],
+    "address": "충남 아산시 선장면 선창리 357-1",
+    "expiresAt": "2026-12-11T15:00:00.000Z",
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급3,700,000원주급가능급여 10일/ 잔업특근에 따라 급여 상이함/ 정규직 상여300% /2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직, 계약직",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "통근버스 운행",
+        "url": "https://www.albamon.com/jobs/detail/120424753"
+      }
+    ],
+    "checkedAt": "2026-11-21T19:32:22.366Z"
+  },
+  "jobkorea:ALBAMON:120424861": {
+    "sites": [],
+    "address": "충남 아산시 선장면 선창리 산 73-2",
+    "expiresAt": "2026-12-11T15:00:00.000Z",
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급3,700,000원주급가능급여 10일/ 잔업특근에 따라 급여 상이함/ 상여금300% /2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직, 계약직",
+    "education": "학력무관",
+    "conditions": [
+      {
+        "id": "bus",
+        "label": "통근버스 안내",
+        "evidence": "통근버스 운행",
+        "url": "https://www.albamon.com/jobs/detail/120424861"
+      }
+    ],
+    "checkedAt": "2026-11-21T19:32:25.666Z"
   }
 }
