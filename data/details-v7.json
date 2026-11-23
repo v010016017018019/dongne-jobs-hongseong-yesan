@@ -55642,7 +55642,7 @@
     "employment": "CONTRACTOR",
     "education": "학력무관",
     "conditions": [],
-    "checkedAt": "2026-11-19T04:21:15.319Z"
+    "checkedAt": "2026-11-23T08:36:56.682Z"
   },
   "saramin:55499005": {
     "sites": [],
@@ -72814,5 +72814,89 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611230019&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-23T07:57:14.024Z"
+  },
+  "work24:VALIDATION:K172112611230081": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 응봉면 예당로 1053-15, (주)중앙타프라",
+        "lat": 36.654603659547504,
+        "lng": 126.76940566839501,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-23T08:36:11.809Z"
+      }
+    ],
+    "address": "충청남도 예산군 응봉면 예당로 1053-15, (주)중앙타프라",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "연봉 4,000만원 ~ 5,000만원 이하",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-23T08:36:11.889Z"
+  },
+  "work24:VALIDATION:K172112611230079": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 예산읍 신례원로95번길 21, 임마누엘어린이집",
+        "lat": 36.71948591597909,
+        "lng": 126.83637845297402,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-23T08:36:12.980Z"
+      }
+    ],
+    "address": "충청남도 예산군 예산읍 신례원로95번길 21, 임마누엘어린이집",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급 113만원 ~ 113만원 이하 협의가능",
+    "employment": "기간의 정함이 없는 근로계약(시간(선택)제)",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-23T08:36:13.046Z"
+  },
+  "work24:VALIDATION:K172112611230077": {
+    "sites": [
+      {
+        "address": "충청남도 예산군 예산읍 신례원로95번길 21, 임마누엘어린이집",
+        "lat": 36.71948591597909,
+        "lng": 126.83637845297402,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-23T08:36:14.185Z"
+      }
+    ],
+    "address": "충청남도 예산군 예산읍 신례원로95번길 21, 임마누엘어린이집",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "시급 10,320원 이상",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-23T08:36:14.245Z"
+  },
+  "jobkorea:50418210": {
+    "sites": [
+      {
+        "address": "충남 예산군 응봉면 충서로 250 (증곡리, 보령제약(주)) 메디앙스물류센터內 비알엠로지스틱스",
+        "lat": 36.6622,
+        "lng": 126.7729,
+        "source": "잡코리아 근무지",
+        "confirmedAt": "2026-11-23T08:37:00.299Z"
+      }
+    ],
+    "address": "충남 예산군 응봉면 충서로 250 (증곡리, 보령제약(주)) 메디앙스물류센터內 비알엠로지스틱스",
+    "closed": false,
+    "locationNote": "",
+    "title": "예산 응봉면 메디앙스(주) 물류센터 피킹·입출고 작업자 모집합니다.",
+    "company": "비알엠로지스틱스㈜",
+    "expiresAt": "2026-12-23T14:59:59.000Z",
+    "experience": "경력무관",
+    "factsVersion": 5,
+    "salary": "연봉 2,620~2,628만원",
+    "employment": "FULL_TIME",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-23T08:37:00.318Z"
   }
 }
