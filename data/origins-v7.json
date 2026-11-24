@@ -1237,7 +1237,7 @@
   "jobkorea:WN:5683300": {
     "originId": "work24:VALIDATION:K172222610150015",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222610150015&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-24T00:21:00.115Z"
+    "sourceCheckedAt": "2026-11-24T04:52:28.377Z"
   },
   "work24:CSI:55302798": {
     "originId": "saramin:55302798",
@@ -2357,7 +2357,7 @@
   "jobkorea:WN:5700608": {
     "originId": "work24:VALIDATION:K172112610260044",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112610260044&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-24T00:35:46.365Z"
+    "sourceCheckedAt": "2026-11-24T04:53:03.414Z"
   },
   "jobkorea:WN:5701212": {
     "originId": "work24:VALIDATION:K172112610260064",
@@ -2677,7 +2677,7 @@
   "jobkorea:WN:5711564": {
     "originId": "work24:VALIDATION:K172222611020010",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611020010&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-24T00:18:53.761Z"
+    "sourceCheckedAt": "2026-11-24T04:52:24.864Z"
   },
   "jobkorea:WN:5712237": {
     "originId": "work24:VALIDATION:KF11522611020001",
@@ -2777,7 +2777,7 @@
   "jobkorea:WN:5716060": {
     "originId": "work24:VALIDATION:K172222611030012",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611030012&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-24T00:18:24.374Z"
+    "sourceCheckedAt": "2026-11-24T04:52:17.855Z"
   },
   "jobkorea:WN:5716349": {
     "originId": "work24:VALIDATION:K161132611030034",
@@ -2832,7 +2832,7 @@
   "jobkorea:WN:5717080": {
     "originId": "work24:VALIDATION:K172222611030027",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611030027&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-24T00:18:35.982Z"
+    "sourceCheckedAt": "2026-11-24T04:52:21.350Z"
   },
   "jobkorea:WN:5717106": {
     "originId": "work24:VALIDATION:K172222611030020",
@@ -3177,7 +3177,7 @@
   "jobkorea:WN:5727338": {
     "originId": "work24:VALIDATION:K172222611090037",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611090037&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-    "sourceCheckedAt": "2026-11-15T18:32:04.519Z"
+    "sourceCheckedAt": "2026-11-24T04:52:14.508Z"
   },
   "jobkorea:WN:5726968": {
     "originId": "work24:VALIDATION:K172112611090097",
@@ -3617,7 +3617,7 @@
   "work24:CSI:55611118": {
     "originId": "saramin:55611118",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55611118",
-    "sourceCheckedAt": "2026-11-22T19:52:48.178Z"
+    "sourceCheckedAt": "2026-11-24T04:51:14.809Z"
   },
   "work24:CSI:55610641": {
     "originId": "saramin:55610641",
@@ -3898,5 +3898,50 @@
     "originId": "work24:VALIDATION:K172112611230064",
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611230064&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "sourceCheckedAt": "2026-11-24T00:31:06.348Z"
+  },
+  "work24:CSI:55654277": {
+    "originId": "saramin:55654277",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55654277",
+    "sourceCheckedAt": "2026-11-24T04:51:06.595Z"
+  },
+  "work24:CSI:55655325": {
+    "originId": "saramin:55655325",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55655325",
+    "sourceCheckedAt": "2026-11-24T04:51:09.722Z"
+  },
+  "work24:CSI:55655464": {
+    "originId": "saramin:55655464",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55655464",
+    "sourceCheckedAt": "2026-11-24T04:51:11.468Z"
+  },
+  "work24:CSI:55655562": {
+    "originId": "saramin:55655562",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55655562",
+    "sourceCheckedAt": "2026-11-24T04:51:13.155Z"
+  },
+  "work24:CSI:55655550": {
+    "originId": "saramin:55655550",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55655550",
+    "sourceCheckedAt": "2026-11-24T04:51:23.979Z"
+  },
+  "jobkorea:WN:5753456": {
+    "originId": "work24:VALIDATION:K172222611240014",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611240014&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-24T04:52:04.685Z"
+  },
+  "jobkorea:WN:5753233": {
+    "originId": "work24:VALIDATION:K172222611240011",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611240011&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-24T04:52:07.667Z"
+  },
+  "jobkorea:WN:5753457": {
+    "originId": "work24:VALIDATION:K172222611240016",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611240016&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-24T04:52:11.172Z"
+  },
+  "jobkorea:WN:5753466": {
+    "originId": "work24:VALIDATION:K172112611240002",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611240002&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "sourceCheckedAt": "2026-11-24T04:53:00.010Z"
   }
 }
