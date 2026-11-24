@@ -35,7 +35,7 @@ if(!detailCache){const legacy=await readJson('details.json',{});detailCache=Obje
 if(!manual){const legacy=await readJson('manual.json',[]);manual=legacy.map(job=>({...job,...jobLink(job.url),source:'saramin',manual:true}));await saveJson('manual-v7.json',manual);}
 if(!overrides){const legacy=await readJson('locations.json',{});overrides=Object.fromEntries(Object.entries(legacy).map(([key,value])=>[`saramin:${key}`,value]));await saveJson('locations-v7.json',overrides);}
 for(const portal of Object.keys(PORTALS))store.providers[portal]||=emptyMeta();
-for(const meta of Object.values(store.providers))if(meta.collectionComplete===false){meta.interrupted=true;meta.error=meta.error||'이전 조회가 중단됐습니다. 저장된 자료를 표시합니다. 공고 가져오기로 이어서 확인하세요.';}
+for(const meta of Object.values(store.providers))if(meta.collectionComplete===false&&!meta.listOnly){meta.interrupted=true;meta.error=meta.error||'이전 조회가 중단됐습니다. 저장된 자료를 표시합니다. 공고 가져오기로 이어서 확인하세요.';}
 let discovery=await readJson('discovery-v7.json',null),settings=await readJson('settings-v7.json',{autoRefresh:true});
 let origins=await readJson('origins-v7.json',{});
 for(const [id,detail]of Object.entries(detailCache))if(detail.originId&&detail.originUrl&&!origins[id])origins[id]={originId:detail.originId,originUrl:detail.originUrl,sourceCheckedAt:detail.checkedAt};
@@ -113,6 +113,7 @@ async function collect(maxPages=100,portals=Object.keys(PORTALS),force=false,tri
         const removed=previous.filter(job=>!ids.has(job.id));
         store.jobs=[...store.jobs.filter(job=>job.portal!==portal),...jobs,...removed];
         recordDiscovery(discovery,mergeJobs([...store.jobs,...manual]),detailCache,at);
+        delete meta.listOnly;
         Object.assign(meta,{fetchedAt:at,totals,pages,truncated,lastAttemptTruncated:[],lastChanges:{at,added,removed:0}});
         await saveJson('discovery-v7.json',discovery);await saveJson('jobs-v7.json',store);
         const pending=jobs.filter(job=>(!overrides[job.id]||detailCache[job.id]?.factsVersion!==5)&&(force||job.affiliate==='고용24'&&origins[job.id]&&!detailCache[job.id]?.originId||detailCache[job.id]?.factsVersion!==5||!detailCache[job.id]?.checkedAt||detailCache[job.id]?.verificationError||Date.now()-Date.parse(detailCache[job.id].checkedAt)>86400000));
