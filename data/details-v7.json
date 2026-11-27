@@ -73732,9 +73732,8 @@
     "originId": "saramin:55657622",
     "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55657622",
     "originEvidence": "공개 제휴 원문 링크",
-    "originSourceCheckedAt": "2026-11-25T21:51:29.998Z",
-    "checkedAt": "2026-11-25T21:51:31.890Z",
-    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+    "originSourceCheckedAt": "2026-11-27T21:29:15.932Z",
+    "checkedAt": "2026-11-27T21:29:17.560Z"
   },
   "work24:CSI:55658193": {
     "sites": [
@@ -76226,7 +76225,28 @@
     "checkedAt": "2026-11-27T08:49:59.078Z"
   },
   "work24:CSI:55689127": {
-    "verificationError": "사람인에 연결하지 못했습니다. 잠시 후 다시 조회해 주세요."
+    "sites": [
+      {
+        "address": "(32288) 충남 홍성군 광천읍 홍남로 578-46",
+        "lat": 36.5003253257,
+        "lng": 126.61362605030001,
+        "source": "사람인 근무지",
+        "confirmedAt": "2026-11-27T21:29:15.280Z"
+      }
+    ],
+    "address": "(32288) 충남 홍성군 광천읍 홍남로 578-46",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "연봉 4,000 만원 (주 40시간) 급여 근무 시간 주 40시간 기준 최저임금은 25,882,560원 입니다. (단, 이는 연장,야간,휴일 수당이 제외된 금액일 수 있습니다.) 닫기",
+    "employment": "정규직(수습기간)3개월",
+    "education": "대졸(2,3년)이상",
+    "conditions": [],
+    "originId": "saramin:55689127",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55689127",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-27T21:29:12.336Z",
+    "checkedAt": "2026-11-27T21:29:15.304Z"
   },
   "work24:CJK:52009135": {
     "sites": [],
@@ -76692,5 +76712,79 @@
     "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172112611270007&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
     "originEvidence": "공개 제휴 원문 링크",
     "originSourceCheckedAt": "2026-11-27T08:55:04.421Z"
+  },
+  "jobkorea:50403639": {
+    "sites": [],
+    "address": "경기 광명시 신기로 21 (일직동, 대호엠스퀘어) 1103호, 1104호",
+    "closed": false,
+    "locationNote": "공개 상세공고에서 이 지역의 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "title": "[5톤화물차운전기사] 화물기사 /초기비용선지원 / 배차팀보유/ 본사직채용",
+    "company": "㈜서진로지스",
+    "expiresAt": "2027-01-27T14:59:59.000Z",
+    "experience": "신입",
+    "factsVersion": 5,
+    "salary": "월급 500~900만원",
+    "employment": "CONTRACTOR",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-27T21:29:57.107Z"
+  },
+  "jobkorea:ALBAMON:120510975": {
+    "sites": [],
+    "address": "충남 홍성군 홍성읍 내법리396-143",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "공개 제휴공고에서 정확한 근무지 좌표를 확인하지 못했습니다.",
+    "factsVersion": 5,
+    "salary": "월급2,800,000원협의가능수습기간있음수습기간 내 급여 변동 없습니다.2026년 최저시급 10,320원급여계산기",
+    "employment": "정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-27T21:30:00.498Z"
+  },
+  "jobkorea:ALBAMON:120510719": {
+    "sites": [
+      {
+        "address": "충남 홍성군 청사로 42 (신경리, 내포씨에스빌딩) 2층 미래인재학원",
+        "lat": 36.64838409423828,
+        "lng": 126.67501068115234,
+        "source": "잡코리아 제휴 알바몬 근무지",
+        "confirmedAt": "2026-11-27T21:30:03.868Z"
+      }
+    ],
+    "address": "충남 홍성군 청사로 42 (신경리, 내포씨에스빌딩) 2층 미래인재학원",
+    "expiresAt": null,
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "월급2,200,000원협의가능2026년 최저시급 10,320원급여계산기",
+    "employment": "계약직, 정규직",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-27T21:30:03.881Z"
+  },
+  "jobkorea:WN:5761450": {
+    "sites": [
+      {
+        "address": "충청남도 홍성군 홍북읍 도청대로93번길 104-174, 용봉산한돈",
+        "lat": 36.6235551386516,
+        "lng": 126.654175339072,
+        "source": "고용24 근무예정지",
+        "confirmedAt": "2026-11-27T08:49:53.018Z"
+      }
+    ],
+    "address": "충청남도 홍성군 홍북읍 도청대로93번길 104-174, 용봉산한돈",
+    "closed": false,
+    "locationNote": "",
+    "factsVersion": 5,
+    "salary": "시급 10,700원 이상 협의가능",
+    "employment": "기간의 정함이 없는 근로계약",
+    "education": "학력무관",
+    "conditions": [],
+    "checkedAt": "2026-11-27T21:30:08.188Z",
+    "originId": "work24:VALIDATION:K172222611270017",
+    "originUrl": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K172222611270017&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+    "originEvidence": "공개 제휴 원문 링크",
+    "originSourceCheckedAt": "2026-11-27T21:30:08.188Z"
   }
 }
